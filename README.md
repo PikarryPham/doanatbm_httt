@@ -5,4 +5,5 @@
 - Oracle và C#
 
 ## Hướng dẫn sử dụng
+- Vui lòng đọc kĩ file "README_SETUP.txt"
 
