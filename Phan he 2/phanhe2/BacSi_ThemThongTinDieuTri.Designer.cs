@@ -48,48 +48,46 @@ namespace phanhe2
             this.dschitietthuoc = new System.Windows.Forms.DataGridView();
             this.Chitietthuoc = new System.Windows.Forms.TabControl();
             this.themthongtinthuoc = new System.Windows.Forms.TabPage();
+            this.dvtinh_txt = new System.Windows.Forms.TextBox();
+            this.btnthemmotthuocchodthuoc = new System.Windows.Forms.Button();
+            this.lieudungthuoctxt = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDownSoLuong = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.themthuocmoitxt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.xoathongtinthuoc = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.xoathuocbtn = new System.Windows.Forms.Button();
+            this.xoathongtinthuoctxt = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.madonthuocvuatao = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.taodonthuocbtn = new System.Windows.Forms.Button();
             this.dsthuoc = new System.Windows.Forms.DataGridView();
             this.timtenthuoctxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.xemdsthuoc_btn = new System.Windows.Forms.Button();
             this.themthongtinsudungdv = new System.Windows.Forms.TabPage();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lieudungthuoctxt = new System.Windows.Forms.TextBox();
-            this.btnthemmotthuocchodthuoc = new System.Windows.Forms.Button();
-            this.xoathongtinthuoctxt = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.xoathuocbtn = new System.Windows.Forms.Button();
-            this.timdichvu = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.timdichvubtn = new System.Windows.Forms.Button();
-            this.listdichvukhambenh = new System.Windows.Forms.DataGridView();
+            this.listDICHVUSUDUNG = new System.Windows.Forms.DataGridView();
             this.tabControlDichVu = new System.Windows.Forms.TabControl();
             this.themdichvu = new System.Windows.Forms.TabPage();
+            this.dateTimeTHOIGIANSDDV_themsddv = new System.Windows.Forms.DateTimePicker();
+            this.label18 = new System.Windows.Forms.Label();
             this.themthongtinsddvbtn = new System.Windows.Forms.Button();
             this.tendichvuthem = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.xoadichvu = new System.Windows.Forms.TabPage();
+            this.dateTimePickerTHOIGIANSDDV_xoasddv = new System.Windows.Forms.DateTimePicker();
+            this.label19 = new System.Windows.Forms.Label();
             this.xoathongtinsddv_btn = new System.Windows.Forms.Button();
             this.xoasddichvutxt = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.listDICHVUSUDUNG = new System.Windows.Forms.DataGridView();
-            this.label18 = new System.Windows.Forms.Label();
-            this.dateTimeTHOIGIANSDDV_themsddv = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerTHOIGIANSDDV_xoasddv = new System.Windows.Forms.DateTimePicker();
-            this.label19 = new System.Windows.Forms.Label();
+            this.listdichvukhambenh = new System.Windows.Forms.DataGridView();
+            this.timdichvu = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.timdichvubtn = new System.Windows.Forms.Button();
+            this.taodonthuocbtn = new System.Windows.Forms.Button();
             this.quayvebtn = new System.Windows.Forms.Button();
-            this.dvtinh_txt = new System.Windows.Forms.TextBox();
             this.tabControlDonThuoc.SuspendLayout();
             this.themthongtindonthuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dschitietthuoc)).BeginInit();
@@ -99,11 +97,11 @@ namespace phanhe2
             this.xoathongtinthuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsthuoc)).BeginInit();
             this.themthongtinsudungdv.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listdichvukhambenh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listDICHVUSUDUNG)).BeginInit();
             this.tabControlDichVu.SuspendLayout();
             this.themdichvu.SuspendLayout();
             this.xoadichvu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listDICHVUSUDUNG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listdichvukhambenh)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -229,7 +227,7 @@ namespace phanhe2
             // 
             this.tabControlDonThuoc.Controls.Add(this.themthongtindonthuoc);
             this.tabControlDonThuoc.Controls.Add(this.themthongtinsudungdv);
-            this.tabControlDonThuoc.Location = new System.Drawing.Point(16, 420);
+            this.tabControlDonThuoc.Location = new System.Drawing.Point(20, 384);
             this.tabControlDonThuoc.Name = "tabControlDonThuoc";
             this.tabControlDonThuoc.SelectedIndex = 0;
             this.tabControlDonThuoc.Size = new System.Drawing.Size(1000, 623);
@@ -292,6 +290,38 @@ namespace phanhe2
             this.themthongtinthuoc.TabIndex = 0;
             this.themthongtinthuoc.Text = "Them thong tin thuoc";
             this.themthongtinthuoc.UseVisualStyleBackColor = true;
+            // 
+            // dvtinh_txt
+            // 
+            this.dvtinh_txt.Location = new System.Drawing.Point(295, 63);
+            this.dvtinh_txt.Name = "dvtinh_txt";
+            this.dvtinh_txt.Size = new System.Drawing.Size(114, 22);
+            this.dvtinh_txt.TabIndex = 43;
+            // 
+            // btnthemmotthuocchodthuoc
+            // 
+            this.btnthemmotthuocchodthuoc.Location = new System.Drawing.Point(177, 145);
+            this.btnthemmotthuocchodthuoc.Name = "btnthemmotthuocchodthuoc";
+            this.btnthemmotthuocchodthuoc.Size = new System.Drawing.Size(147, 42);
+            this.btnthemmotthuocchodthuoc.TabIndex = 42;
+            this.btnthemmotthuocchodthuoc.Text = "Them thuoc";
+            this.btnthemmotthuocchodthuoc.UseVisualStyleBackColor = true;
+            // 
+            // lieudungthuoctxt
+            // 
+            this.lieudungthuoctxt.Location = new System.Drawing.Point(133, 107);
+            this.lieudungthuoctxt.Name = "lieudungthuoctxt";
+            this.lieudungthuoctxt.Size = new System.Drawing.Size(276, 22);
+            this.lieudungthuoctxt.TabIndex = 42;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(24, 107);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(71, 17);
+            this.label14.TabIndex = 41;
+            this.label14.Text = "Lieu dung";
             // 
             // label13
             // 
@@ -357,12 +387,30 @@ namespace phanhe2
             this.xoathongtinthuoc.Text = "Xoa thong tin thuoc";
             this.xoathongtinthuoc.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // xoathuocbtn
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 331);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(867, 22);
-            this.textBox1.TabIndex = 22;
+            this.xoathuocbtn.Location = new System.Drawing.Point(154, 83);
+            this.xoathuocbtn.Name = "xoathuocbtn";
+            this.xoathuocbtn.Size = new System.Drawing.Size(147, 42);
+            this.xoathuocbtn.TabIndex = 43;
+            this.xoathuocbtn.Text = "Xoa thuoc";
+            this.xoathuocbtn.UseVisualStyleBackColor = true;
+            // 
+            // xoathongtinthuoctxt
+            // 
+            this.xoathongtinthuoctxt.Location = new System.Drawing.Point(154, 26);
+            this.xoathongtinthuoctxt.Name = "xoathongtinthuoctxt";
+            this.xoathongtinthuoctxt.Size = new System.Drawing.Size(303, 22);
+            this.xoathongtinthuoctxt.TabIndex = 39;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(43, 26);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(72, 17);
+            this.label15.TabIndex = 38;
+            this.label15.Text = "Ten thuoc";
             // 
             // madonthuocvuatao
             // 
@@ -374,15 +422,6 @@ namespace phanhe2
             this.madonthuocvuatao.TabIndex = 33;
             this.madonthuocvuatao.Text = "ma don thuoc";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(22, 331);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 17);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Ghi chu bac si";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -392,15 +431,6 @@ namespace phanhe2
             this.label8.Size = new System.Drawing.Size(258, 29);
             this.label8.TabIndex = 32;
             this.label8.Text = "Thong tin don thuoc: ";
-            // 
-            // taodonthuocbtn
-            // 
-            this.taodonthuocbtn.Location = new System.Drawing.Point(439, 372);
-            this.taodonthuocbtn.Name = "taodonthuocbtn";
-            this.taodonthuocbtn.Size = new System.Drawing.Size(147, 42);
-            this.taodonthuocbtn.TabIndex = 31;
-            this.taodonthuocbtn.Text = "Tao don thuoc moi";
-            this.taodonthuocbtn.UseVisualStyleBackColor = true;
             // 
             // dsthuoc
             // 
@@ -454,97 +484,22 @@ namespace phanhe2
             this.themthongtinsudungdv.Text = "Them thong tin su dung dich vu";
             this.themthongtinsudungdv.UseVisualStyleBackColor = true;
             // 
-            // label14
+            // listDICHVUSUDUNG
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(24, 107);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(71, 17);
-            this.label14.TabIndex = 41;
-            this.label14.Text = "Lieu dung";
-            // 
-            // lieudungthuoctxt
-            // 
-            this.lieudungthuoctxt.Location = new System.Drawing.Point(133, 107);
-            this.lieudungthuoctxt.Name = "lieudungthuoctxt";
-            this.lieudungthuoctxt.Size = new System.Drawing.Size(276, 22);
-            this.lieudungthuoctxt.TabIndex = 42;
-            // 
-            // btnthemmotthuocchodthuoc
-            // 
-            this.btnthemmotthuocchodthuoc.Location = new System.Drawing.Point(177, 145);
-            this.btnthemmotthuocchodthuoc.Name = "btnthemmotthuocchodthuoc";
-            this.btnthemmotthuocchodthuoc.Size = new System.Drawing.Size(147, 42);
-            this.btnthemmotthuocchodthuoc.TabIndex = 42;
-            this.btnthemmotthuocchodthuoc.Text = "Them thuoc";
-            this.btnthemmotthuocchodthuoc.UseVisualStyleBackColor = true;
-            // 
-            // xoathongtinthuoctxt
-            // 
-            this.xoathongtinthuoctxt.Location = new System.Drawing.Point(154, 26);
-            this.xoathongtinthuoctxt.Name = "xoathongtinthuoctxt";
-            this.xoathongtinthuoctxt.Size = new System.Drawing.Size(303, 22);
-            this.xoathongtinthuoctxt.TabIndex = 39;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(43, 26);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(72, 17);
-            this.label15.TabIndex = 38;
-            this.label15.Text = "Ten thuoc";
-            // 
-            // xoathuocbtn
-            // 
-            this.xoathuocbtn.Location = new System.Drawing.Point(154, 83);
-            this.xoathuocbtn.Name = "xoathuocbtn";
-            this.xoathuocbtn.Size = new System.Drawing.Size(147, 42);
-            this.xoathuocbtn.TabIndex = 43;
-            this.xoathuocbtn.Text = "Xoa thuoc";
-            this.xoathuocbtn.UseVisualStyleBackColor = true;
-            // 
-            // timdichvu
-            // 
-            this.timdichvu.Location = new System.Drawing.Point(184, 27);
-            this.timdichvu.Name = "timdichvu";
-            this.timdichvu.Size = new System.Drawing.Size(545, 22);
-            this.timdichvu.TabIndex = 32;
-            this.timdichvu.UseWaitCursor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 27);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(154, 17);
-            this.label16.TabIndex = 31;
-            this.label16.Text = "Tim dich vu kham benh";
-            // 
-            // timdichvubtn
-            // 
-            this.timdichvubtn.Location = new System.Drawing.Point(735, 14);
-            this.timdichvubtn.Name = "timdichvubtn";
-            this.timdichvubtn.Size = new System.Drawing.Size(241, 48);
-            this.timdichvubtn.TabIndex = 30;
-            this.timdichvubtn.Text = "Xem thong tin dich vu kham benh";
-            this.timdichvubtn.UseVisualStyleBackColor = true;
-            // 
-            // listdichvukhambenh
-            // 
-            this.listdichvukhambenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listdichvukhambenh.Location = new System.Drawing.Point(16, 80);
-            this.listdichvukhambenh.Name = "listdichvukhambenh";
-            this.listdichvukhambenh.RowHeadersWidth = 51;
-            this.listdichvukhambenh.RowTemplate.Height = 24;
-            this.listdichvukhambenh.Size = new System.Drawing.Size(960, 235);
-            this.listdichvukhambenh.TabIndex = 33;
+            this.listDICHVUSUDUNG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.listDICHVUSUDUNG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listDICHVUSUDUNG.Location = new System.Drawing.Point(552, 357);
+            this.listDICHVUSUDUNG.Name = "listDICHVUSUDUNG";
+            this.listDICHVUSUDUNG.RowHeadersWidth = 51;
+            this.listDICHVUSUDUNG.RowTemplate.Height = 24;
+            this.listDICHVUSUDUNG.Size = new System.Drawing.Size(433, 216);
+            this.listDICHVUSUDUNG.TabIndex = 36;
             // 
             // tabControlDichVu
             // 
             this.tabControlDichVu.Controls.Add(this.themdichvu);
             this.tabControlDichVu.Controls.Add(this.xoadichvu);
-            this.tabControlDichVu.Location = new System.Drawing.Point(16, 332);
+            this.tabControlDichVu.Location = new System.Drawing.Point(16, 328);
             this.tabControlDichVu.Name = "tabControlDichVu";
             this.tabControlDichVu.SelectedIndex = 0;
             this.tabControlDichVu.Size = new System.Drawing.Size(534, 245);
@@ -564,6 +519,23 @@ namespace phanhe2
             this.themdichvu.TabIndex = 0;
             this.themdichvu.Text = "Them thong tin su dung dich vu";
             this.themdichvu.UseVisualStyleBackColor = true;
+            // 
+            // dateTimeTHOIGIANSDDV_themsddv
+            // 
+            this.dateTimeTHOIGIANSDDV_themsddv.Location = new System.Drawing.Point(216, 70);
+            this.dateTimeTHOIGIANSDDV_themsddv.Name = "dateTimeTHOIGIANSDDV_themsddv";
+            this.dateTimeTHOIGIANSDDV_themsddv.Size = new System.Drawing.Size(288, 22);
+            this.dateTimeTHOIGIANSDDV_themsddv.TabIndex = 44;
+            this.dateTimeTHOIGIANSDDV_themsddv.Value = new System.DateTime(2021, 4, 20, 0, 0, 0, 0);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(27, 75);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(171, 17);
+            this.label18.TabIndex = 43;
+            this.label18.Text = "Thoi gian su dung dich vu";
             // 
             // themthongtinsddvbtn
             // 
@@ -605,6 +577,23 @@ namespace phanhe2
             this.xoadichvu.Text = "Xoa thong tin su dung dich vu";
             this.xoadichvu.UseVisualStyleBackColor = true;
             // 
+            // dateTimePickerTHOIGIANSDDV_xoasddv
+            // 
+            this.dateTimePickerTHOIGIANSDDV_xoasddv.Location = new System.Drawing.Point(214, 77);
+            this.dateTimePickerTHOIGIANSDDV_xoasddv.Name = "dateTimePickerTHOIGIANSDDV_xoasddv";
+            this.dateTimePickerTHOIGIANSDDV_xoasddv.Size = new System.Drawing.Size(288, 22);
+            this.dateTimePickerTHOIGIANSDDV_xoasddv.TabIndex = 47;
+            this.dateTimePickerTHOIGIANSDDV_xoasddv.Value = new System.DateTime(2021, 4, 20, 0, 0, 0, 0);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(25, 82);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(171, 17);
+            this.label19.TabIndex = 46;
+            this.label19.Text = "Thoi gian su dung dich vu";
+            // 
             // xoathongtinsddv_btn
             // 
             this.xoathongtinsddv_btn.Location = new System.Drawing.Point(131, 151);
@@ -630,50 +619,50 @@ namespace phanhe2
             this.label17.TabIndex = 43;
             this.label17.Text = "Ten dich vu";
             // 
-            // listDICHVUSUDUNG
+            // listdichvukhambenh
             // 
-            this.listDICHVUSUDUNG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.listDICHVUSUDUNG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listDICHVUSUDUNG.Location = new System.Drawing.Point(552, 357);
-            this.listDICHVUSUDUNG.Name = "listDICHVUSUDUNG";
-            this.listDICHVUSUDUNG.RowHeadersWidth = 51;
-            this.listDICHVUSUDUNG.RowTemplate.Height = 24;
-            this.listDICHVUSUDUNG.Size = new System.Drawing.Size(433, 216);
-            this.listDICHVUSUDUNG.TabIndex = 36;
+            this.listdichvukhambenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listdichvukhambenh.Location = new System.Drawing.Point(16, 80);
+            this.listdichvukhambenh.Name = "listdichvukhambenh";
+            this.listdichvukhambenh.RowHeadersWidth = 51;
+            this.listdichvukhambenh.RowTemplate.Height = 24;
+            this.listdichvukhambenh.Size = new System.Drawing.Size(960, 235);
+            this.listdichvukhambenh.TabIndex = 33;
             // 
-            // label18
+            // timdichvu
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(27, 75);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(171, 17);
-            this.label18.TabIndex = 43;
-            this.label18.Text = "Thoi gian su dung dich vu";
+            this.timdichvu.Location = new System.Drawing.Point(184, 27);
+            this.timdichvu.Name = "timdichvu";
+            this.timdichvu.Size = new System.Drawing.Size(545, 22);
+            this.timdichvu.TabIndex = 32;
+            this.timdichvu.UseWaitCursor = true;
             // 
-            // dateTimeTHOIGIANSDDV_themsddv
+            // label16
             // 
-            this.dateTimeTHOIGIANSDDV_themsddv.Location = new System.Drawing.Point(216, 70);
-            this.dateTimeTHOIGIANSDDV_themsddv.Name = "dateTimeTHOIGIANSDDV_themsddv";
-            this.dateTimeTHOIGIANSDDV_themsddv.Size = new System.Drawing.Size(288, 22);
-            this.dateTimeTHOIGIANSDDV_themsddv.TabIndex = 44;
-            this.dateTimeTHOIGIANSDDV_themsddv.Value = new System.DateTime(2021, 4, 20, 0, 0, 0, 0);
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(13, 27);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(154, 17);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "Tim dich vu kham benh";
             // 
-            // dateTimePickerTHOIGIANSDDV_xoasddv
+            // timdichvubtn
             // 
-            this.dateTimePickerTHOIGIANSDDV_xoasddv.Location = new System.Drawing.Point(214, 77);
-            this.dateTimePickerTHOIGIANSDDV_xoasddv.Name = "dateTimePickerTHOIGIANSDDV_xoasddv";
-            this.dateTimePickerTHOIGIANSDDV_xoasddv.Size = new System.Drawing.Size(288, 22);
-            this.dateTimePickerTHOIGIANSDDV_xoasddv.TabIndex = 47;
-            this.dateTimePickerTHOIGIANSDDV_xoasddv.Value = new System.DateTime(2021, 4, 20, 0, 0, 0, 0);
+            this.timdichvubtn.Location = new System.Drawing.Point(735, 14);
+            this.timdichvubtn.Name = "timdichvubtn";
+            this.timdichvubtn.Size = new System.Drawing.Size(241, 48);
+            this.timdichvubtn.TabIndex = 30;
+            this.timdichvubtn.Text = "Xem thong tin dich vu kham benh";
+            this.timdichvubtn.UseVisualStyleBackColor = true;
             // 
-            // label19
+            // taodonthuocbtn
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(25, 82);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(171, 17);
-            this.label19.TabIndex = 46;
-            this.label19.Text = "Thoi gian su dung dich vu";
+            this.taodonthuocbtn.Location = new System.Drawing.Point(423, 315);
+            this.taodonthuocbtn.Name = "taodonthuocbtn";
+            this.taodonthuocbtn.Size = new System.Drawing.Size(147, 42);
+            this.taodonthuocbtn.TabIndex = 31;
+            this.taodonthuocbtn.Text = "Tao don thuoc moi";
+            this.taodonthuocbtn.UseVisualStyleBackColor = true;
             // 
             // quayvebtn
             // 
@@ -686,13 +675,6 @@ namespace phanhe2
             this.quayvebtn.Text = "Quay ve";
             this.quayvebtn.UseVisualStyleBackColor = false;
             // 
-            // dvtinh_txt
-            // 
-            this.dvtinh_txt.Location = new System.Drawing.Point(295, 63);
-            this.dvtinh_txt.Name = "dvtinh_txt";
-            this.dvtinh_txt.Size = new System.Drawing.Size(114, 22);
-            this.dvtinh_txt.TabIndex = 43;
-            // 
             // BacSi_ThemThongTinDieuTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -701,10 +683,8 @@ namespace phanhe2
             this.Controls.Add(this.quayvebtn);
             this.Controls.Add(this.tabControlDonThuoc);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.chandoantxt);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.trieuchungtxt);
             this.Controls.Add(this.taodonthuocbtn);
@@ -732,13 +712,13 @@ namespace phanhe2
             ((System.ComponentModel.ISupportInitialize)(this.dsthuoc)).EndInit();
             this.themthongtinsudungdv.ResumeLayout(false);
             this.themthongtinsudungdv.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listdichvukhambenh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listDICHVUSUDUNG)).EndInit();
             this.tabControlDichVu.ResumeLayout(false);
             this.themdichvu.ResumeLayout(false);
             this.themdichvu.PerformLayout();
             this.xoadichvu.ResumeLayout(false);
             this.xoadichvu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listDICHVUSUDUNG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listdichvukhambenh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -768,8 +748,6 @@ namespace phanhe2
         private System.Windows.Forms.Button xemdsthuoc_btn;
         private System.Windows.Forms.DataGridView dsthuoc;
         private System.Windows.Forms.Button taodonthuocbtn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label madonthuocvuatao;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabControl Chitietthuoc;
