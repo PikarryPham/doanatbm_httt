@@ -33,15 +33,12 @@ namespace phanhe2
             this.username = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tenbenhnhantxt = new System.Windows.Forms.TextBox();
-            this.mabenhnhantxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePickertxt = new System.Windows.Forms.DateTimePicker();
             this.trieuchungtxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.chandoantxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.tabControlDonThuoc = new System.Windows.Forms.TabControl();
             this.themthongtindonthuoc = new System.Windows.Forms.TabPage();
@@ -88,6 +85,9 @@ namespace phanhe2
             this.timdichvubtn = new System.Windows.Forms.Button();
             this.taodonthuocbtn = new System.Windows.Forms.Button();
             this.quayvebtn = new System.Windows.Forms.Button();
+            this.makhambenh_themdieutri = new System.Windows.Forms.NumericUpDown();
+            this.ngaykham_themdv = new System.Windows.Forms.DateTimePicker();
+            this.ngaytaikham_themdieutri = new System.Windows.Forms.DateTimePicker();
             this.tabControlDonThuoc.SuspendLayout();
             this.themthongtindonthuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dschitietthuoc)).BeginInit();
@@ -102,6 +102,7 @@ namespace phanhe2
             this.themdichvu.SuspendLayout();
             this.xoadichvu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listdichvukhambenh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.makhambenh_themdieutri)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -141,13 +142,6 @@ namespace phanhe2
             this.tenbenhnhantxt.Size = new System.Drawing.Size(251, 22);
             this.tenbenhnhantxt.TabIndex = 7;
             // 
-            // mabenhnhantxt
-            // 
-            this.mabenhnhantxt.Location = new System.Drawing.Point(536, 127);
-            this.mabenhnhantxt.Name = "mabenhnhantxt";
-            this.mabenhnhantxt.Size = new System.Drawing.Size(251, 22);
-            this.mabenhnhantxt.TabIndex = 9;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -165,14 +159,6 @@ namespace phanhe2
             this.label4.Size = new System.Drawing.Size(115, 17);
             this.label4.TabIndex = 10;
             this.label4.Text = "Ngay kham benh";
-            // 
-            // dateTimePickertxt
-            // 
-            this.dateTimePickertxt.Location = new System.Drawing.Point(536, 182);
-            this.dateTimePickertxt.Name = "dateTimePickertxt";
-            this.dateTimePickertxt.Size = new System.Drawing.Size(251, 22);
-            this.dateTimePickertxt.TabIndex = 11;
-            this.dateTimePickertxt.Value = new System.DateTime(2021, 4, 20, 0, 0, 0, 0);
             // 
             // trieuchungtxt
             // 
@@ -205,14 +191,6 @@ namespace phanhe2
             this.label6.Size = new System.Drawing.Size(77, 17);
             this.label6.TabIndex = 14;
             this.label6.Text = "Chan doan";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(136, 238);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(251, 22);
-            this.dateTimePicker1.TabIndex = 17;
-            this.dateTimePicker1.Value = new System.DateTime(2021, 4, 20, 0, 0, 0, 0);
             // 
             // label7
             // 
@@ -633,7 +611,7 @@ namespace phanhe2
             // 
             this.timdichvu.Location = new System.Drawing.Point(184, 27);
             this.timdichvu.Name = "timdichvu";
-            this.timdichvu.Size = new System.Drawing.Size(545, 22);
+            this.timdichvu.Size = new System.Drawing.Size(513, 22);
             this.timdichvu.TabIndex = 32;
             this.timdichvu.UseWaitCursor = true;
             // 
@@ -675,23 +653,62 @@ namespace phanhe2
             this.quayvebtn.Text = "Quay ve";
             this.quayvebtn.UseVisualStyleBackColor = false;
             // 
+            // makhambenh_themdieutri
+            // 
+            this.makhambenh_themdieutri.Location = new System.Drawing.Point(536, 125);
+            this.makhambenh_themdieutri.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.makhambenh_themdieutri.Name = "makhambenh_themdieutri";
+            this.makhambenh_themdieutri.Size = new System.Drawing.Size(251, 22);
+            this.makhambenh_themdieutri.TabIndex = 65;
+            this.makhambenh_themdieutri.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // ngaykham_themdv
+            // 
+            this.ngaykham_themdv.CustomFormat = "yyyy-MM-dd";
+            this.ngaykham_themdv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaykham_themdv.Location = new System.Drawing.Point(536, 184);
+            this.ngaykham_themdv.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaykham_themdv.Name = "ngaykham_themdv";
+            this.ngaykham_themdv.Size = new System.Drawing.Size(251, 22);
+            this.ngaykham_themdv.TabIndex = 66;
+            this.ngaykham_themdv.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
+            // 
+            // ngaytaikham_themdieutri
+            // 
+            this.ngaytaikham_themdieutri.CustomFormat = "yyyy-MM-dd";
+            this.ngaytaikham_themdieutri.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaytaikham_themdieutri.Location = new System.Drawing.Point(136, 240);
+            this.ngaytaikham_themdieutri.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaytaikham_themdieutri.Name = "ngaytaikham_themdieutri";
+            this.ngaytaikham_themdieutri.Size = new System.Drawing.Size(251, 22);
+            this.ngaytaikham_themdieutri.TabIndex = 67;
+            this.ngaytaikham_themdieutri.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
+            // 
             // BacSi_ThemThongTinDieuTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 1055);
+            this.Controls.Add(this.ngaytaikham_themdieutri);
+            this.Controls.Add(this.ngaykham_themdv);
+            this.Controls.Add(this.makhambenh_themdieutri);
             this.Controls.Add(this.quayvebtn);
             this.Controls.Add(this.tabControlDonThuoc);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.chandoantxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.trieuchungtxt);
             this.Controls.Add(this.taodonthuocbtn);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePickertxt);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.mabenhnhantxt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tenbenhnhantxt);
             this.Controls.Add(this.label2);
@@ -719,6 +736,7 @@ namespace phanhe2
             this.xoadichvu.ResumeLayout(false);
             this.xoadichvu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listdichvukhambenh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.makhambenh_themdieutri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -730,15 +748,12 @@ namespace phanhe2
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tenbenhnhantxt;
-        private System.Windows.Forms.TextBox mabenhnhantxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePickertxt;
         private System.Windows.Forms.TextBox trieuchungtxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox chandoantxt;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TabControl tabControlDonThuoc;
         private System.Windows.Forms.TabPage themthongtindonthuoc;
@@ -785,5 +800,8 @@ namespace phanhe2
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button quayvebtn;
         private System.Windows.Forms.TextBox dvtinh_txt;
+        private System.Windows.Forms.NumericUpDown makhambenh_themdieutri;
+        private System.Windows.Forms.DateTimePicker ngaykham_themdv;
+        private System.Windows.Forms.DateTimePicker ngaytaikham_themdieutri;
     }
 }

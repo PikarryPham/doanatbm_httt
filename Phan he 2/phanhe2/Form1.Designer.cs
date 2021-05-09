@@ -55,7 +55,7 @@ namespace phanhe2
             // 
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(707, 20);
+            this.username.Location = new System.Drawing.Point(707, 19);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(99, 25);
             this.username.TabIndex = 1;
