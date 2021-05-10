@@ -90,16 +90,42 @@ namespace atbm
             this.KH_ID = new System.Windows.Forms.CheckBox();
             this.grantoption_KHAM = new System.Windows.Forms.CheckBox();
             this.phongban = new System.Windows.Forms.TabPage();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.grantoption_phong = new System.Windows.Forms.CheckBox();
             this.benhnhan = new System.Windows.Forms.TabPage();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.grant_bnhan = new System.Windows.Forms.CheckBox();
             this.dichvukham = new System.Windows.Forms.TabPage();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.grantoption_dvkham = new System.Windows.Forms.CheckBox();
             this.donthuoc = new System.Windows.Forms.TabPage();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.grantoption_DONTHUOC = new System.Windows.Forms.CheckBox();
             this.ctdonthuoc = new System.Windows.Forms.TabPage();
+            this.checkBox24 = new System.Windows.Forms.CheckBox();
+            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.checkBox22 = new System.Windows.Forms.CheckBox();
+            this.checkBox23 = new System.Windows.Forms.CheckBox();
             this.grantoption_CTdonthuoc = new System.Windows.Forms.CheckBox();
             this.sudungdv = new System.Windows.Forms.TabPage();
+            this.checkBox25 = new System.Windows.Forms.CheckBox();
+            this.checkBox26 = new System.Windows.Forms.CheckBox();
+            this.checkBox27 = new System.Windows.Forms.CheckBox();
+            this.checkBox28 = new System.Windows.Forms.CheckBox();
+            this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.grantoption_SUDUNGDV = new System.Windows.Forms.CheckBox();
             this.capquyen_user_name = new System.Windows.Forms.TextBox();
             this.capquyen_role_name = new System.Windows.Forms.TextBox();
@@ -152,33 +178,9 @@ namespace atbm
             this.timkiemuserrolelbl = new System.Windows.Forms.Label();
             this.timkiemuserroletb = new System.Windows.Forms.TextBox();
             this.bigtabcontrol = new System.Windows.Forms.TabControl();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.auditbtn = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox25 = new System.Windows.Forms.CheckBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.audit.SuspendLayout();
             this.thuhoiquyen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -209,6 +211,7 @@ namespace atbm
             this.dsnguoidung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.bigtabcontrol.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // account
@@ -225,6 +228,8 @@ namespace atbm
             // 
             this.audit.BackColor = System.Drawing.Color.Silver;
             this.audit.Controls.Add(this.label11);
+            this.audit.Controls.Add(this.auditbtn);
+            this.audit.Controls.Add(this.dataGridView4);
             this.audit.Location = new System.Drawing.Point(4, 25);
             this.audit.Name = "audit";
             this.audit.Size = new System.Drawing.Size(1109, 582);
@@ -903,6 +908,36 @@ namespace atbm
             this.phongban.TabIndex = 2;
             this.phongban.Text = "PHONGBAN";
             // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(439, 122);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(84, 21);
+            this.checkBox3.TabIndex = 31;
+            this.checkBox3.Text = "PB_SDT";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(439, 82);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(84, 21);
+            this.checkBox2.TabIndex = 30;
+            this.checkBox2.Text = "PB_TEN";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(439, 45);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(69, 21);
+            this.checkBox1.TabIndex = 29;
+            this.checkBox1.Text = "PB_ID";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // grantoption_phong
             // 
             this.grantoption_phong.AutoSize = true;
@@ -929,6 +964,56 @@ namespace atbm
             this.benhnhan.TabIndex = 3;
             this.benhnhan.Text = "BENHNHAN";
             // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(399, 197);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(85, 21);
+            this.checkBox8.TabIndex = 36;
+            this.checkBox8.Text = "BN_SDT";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(399, 153);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(101, 21);
+            this.checkBox7.TabIndex = 35;
+            this.checkBox7.Text = "BN_DIACHI";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(399, 114);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(119, 21);
+            this.checkBox6.TabIndex = 34;
+            this.checkBox6.Text = "BN_NAMSINH";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(399, 77);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(85, 21);
+            this.checkBox5.TabIndex = 33;
+            this.checkBox5.Text = "BN_TEN";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(399, 40);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(70, 21);
+            this.checkBox4.TabIndex = 32;
+            this.checkBox4.Text = "BN_ID";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
             // grant_bnhan
             // 
             this.grant_bnhan.AutoSize = true;
@@ -954,6 +1039,46 @@ namespace atbm
             this.dichvukham.TabIndex = 4;
             this.dichvukham.Text = "DICH VU KHAM BENH";
             // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(399, 167);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(108, 21);
+            this.checkBox15.TabIndex = 38;
+            this.checkBox15.Text = "DV_PHONG";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(399, 129);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(111, 21);
+            this.checkBox11.TabIndex = 37;
+            this.checkBox11.Text = "DV_DONGIA";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(399, 90);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(85, 21);
+            this.checkBox10.TabIndex = 36;
+            this.checkBox10.Text = "DV_TEN";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(399, 53);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(70, 21);
+            this.checkBox9.TabIndex = 35;
+            this.checkBox9.Text = "DV_ID";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
             // grantoption_dvkham
             // 
             this.grantoption_dvkham.AutoSize = true;
@@ -978,6 +1103,46 @@ namespace atbm
             this.donthuoc.Size = new System.Drawing.Size(684, 311);
             this.donthuoc.TabIndex = 6;
             this.donthuoc.Text = "DON THUOC";
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Location = new System.Drawing.Point(383, 183);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(109, 21);
+            this.checkBox16.TabIndex = 44;
+            this.checkBox16.Text = "DT_IDKHAM";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // checkBox17
+            // 
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.Location = new System.Drawing.Point(383, 145);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(128, 21);
+            this.checkBox17.TabIndex = 43;
+            this.checkBox17.Text = "DT_GHICHUBS";
+            this.checkBox17.UseVisualStyleBackColor = true;
+            // 
+            // checkBox18
+            // 
+            this.checkBox18.AutoSize = true;
+            this.checkBox18.Location = new System.Drawing.Point(383, 106);
+            this.checkBox18.Name = "checkBox18";
+            this.checkBox18.Size = new System.Drawing.Size(129, 21);
+            this.checkBox18.TabIndex = 42;
+            this.checkBox18.Text = "DT_TONGTIEN";
+            this.checkBox18.UseVisualStyleBackColor = true;
+            // 
+            // checkBox19
+            // 
+            this.checkBox19.AutoSize = true;
+            this.checkBox19.Location = new System.Drawing.Point(383, 69);
+            this.checkBox19.Name = "checkBox19";
+            this.checkBox19.Size = new System.Drawing.Size(70, 21);
+            this.checkBox19.TabIndex = 41;
+            this.checkBox19.Text = "DT_ID";
+            this.checkBox19.UseVisualStyleBackColor = true;
             // 
             // grantoption_DONTHUOC
             // 
@@ -1005,6 +1170,56 @@ namespace atbm
             this.ctdonthuoc.TabIndex = 7;
             this.ctdonthuoc.Text = "CT_DONTHUOC";
             // 
+            // checkBox24
+            // 
+            this.checkBox24.AutoSize = true;
+            this.checkBox24.Location = new System.Drawing.Point(391, 193);
+            this.checkBox24.Name = "checkBox24";
+            this.checkBox24.Size = new System.Drawing.Size(146, 21);
+            this.checkBox24.TabIndex = 49;
+            this.checkBox24.Text = "CTDT_LIEUDUNG";
+            this.checkBox24.UseVisualStyleBackColor = true;
+            // 
+            // checkBox20
+            // 
+            this.checkBox20.AutoSize = true;
+            this.checkBox20.Location = new System.Drawing.Point(391, 156);
+            this.checkBox20.Name = "checkBox20";
+            this.checkBox20.Size = new System.Drawing.Size(98, 21);
+            this.checkBox20.TabIndex = 48;
+            this.checkBox20.Text = "CTDT_GIA";
+            this.checkBox20.UseVisualStyleBackColor = true;
+            // 
+            // checkBox21
+            // 
+            this.checkBox21.AutoSize = true;
+            this.checkBox21.Location = new System.Drawing.Point(391, 118);
+            this.checkBox21.Name = "checkBox21";
+            this.checkBox21.Size = new System.Drawing.Size(145, 21);
+            this.checkBox21.TabIndex = 47;
+            this.checkBox21.Text = "CTDT_SOLUONG";
+            this.checkBox21.UseVisualStyleBackColor = true;
+            // 
+            // checkBox22
+            // 
+            this.checkBox22.AutoSize = true;
+            this.checkBox22.Location = new System.Drawing.Point(391, 79);
+            this.checkBox22.Name = "checkBox22";
+            this.checkBox22.Size = new System.Drawing.Size(137, 21);
+            this.checkBox22.TabIndex = 46;
+            this.checkBox22.Text = "CTDT_IDTHUOC";
+            this.checkBox22.UseVisualStyleBackColor = true;
+            // 
+            // checkBox23
+            // 
+            this.checkBox23.AutoSize = true;
+            this.checkBox23.Location = new System.Drawing.Point(391, 42);
+            this.checkBox23.Name = "checkBox23";
+            this.checkBox23.Size = new System.Drawing.Size(119, 21);
+            this.checkBox23.TabIndex = 45;
+            this.checkBox23.Text = "CTDT_IDDON";
+            this.checkBox23.UseVisualStyleBackColor = true;
+            // 
             // grantoption_CTdonthuoc
             // 
             this.grantoption_CTdonthuoc.AutoSize = true;
@@ -1030,6 +1245,56 @@ namespace atbm
             this.sudungdv.Size = new System.Drawing.Size(684, 311);
             this.sudungdv.TabIndex = 8;
             this.sudungdv.Text = "SUDUNGDV";
+            // 
+            // checkBox25
+            // 
+            this.checkBox25.AutoSize = true;
+            this.checkBox25.Location = new System.Drawing.Point(388, 193);
+            this.checkBox25.Name = "checkBox25";
+            this.checkBox25.Size = new System.Drawing.Size(122, 21);
+            this.checkBox25.TabIndex = 54;
+            this.checkBox25.Text = "SDDV_CHECK";
+            this.checkBox25.UseVisualStyleBackColor = true;
+            // 
+            // checkBox26
+            // 
+            this.checkBox26.AutoSize = true;
+            this.checkBox26.Location = new System.Drawing.Point(388, 156);
+            this.checkBox26.Name = "checkBox26";
+            this.checkBox26.Size = new System.Drawing.Size(142, 21);
+            this.checkBox26.TabIndex = 53;
+            this.checkBox26.Text = "SDDV_THOIGIAN";
+            this.checkBox26.UseVisualStyleBackColor = true;
+            // 
+            // checkBox27
+            // 
+            this.checkBox27.AutoSize = true;
+            this.checkBox27.Location = new System.Drawing.Point(388, 118);
+            this.checkBox27.Name = "checkBox27";
+            this.checkBox27.Size = new System.Drawing.Size(167, 21);
+            this.checkBox27.TabIndex = 52;
+            this.checkBox27.Text = "SDDV_NGTHUCHIEN";
+            this.checkBox27.UseVisualStyleBackColor = true;
+            // 
+            // checkBox28
+            // 
+            this.checkBox28.AutoSize = true;
+            this.checkBox28.Location = new System.Drawing.Point(388, 79);
+            this.checkBox28.Name = "checkBox28";
+            this.checkBox28.Size = new System.Drawing.Size(128, 21);
+            this.checkBox28.TabIndex = 51;
+            this.checkBox28.Text = "SDDV_IDKHAM";
+            this.checkBox28.UseVisualStyleBackColor = true;
+            // 
+            // checkBox29
+            // 
+            this.checkBox29.AutoSize = true;
+            this.checkBox29.Location = new System.Drawing.Point(388, 42);
+            this.checkBox29.Name = "checkBox29";
+            this.checkBox29.Size = new System.Drawing.Size(108, 21);
+            this.checkBox29.TabIndex = 50;
+            this.checkBox29.Text = "SDDV_IDDV";
+            this.checkBox29.UseVisualStyleBackColor = true;
             // 
             // grantoption_SUDUNGDV
             // 
@@ -1591,277 +1856,36 @@ namespace atbm
             this.bigtabcontrol.Size = new System.Drawing.Size(1117, 611);
             this.bigtabcontrol.TabIndex = 1;
             // 
+            // dataGridView4
+            // 
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(25, 96);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersWidth = 51;
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.Size = new System.Drawing.Size(1061, 417);
+            this.dataGridView4.TabIndex = 0;
+            // 
+            // auditbtn
+            // 
+            this.auditbtn.Location = new System.Drawing.Point(841, 41);
+            this.auditbtn.Name = "auditbtn";
+            this.auditbtn.Size = new System.Drawing.Size(245, 40);
+            this.auditbtn.TabIndex = 1;
+            this.auditbtn.Text = "Xem thong tin audit";
+            this.auditbtn.UseVisualStyleBackColor = true;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.DarkGray;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(279, 222);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label11.Location = new System.Drawing.Point(20, 43);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(591, 78);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "TÍNH NĂNG TẠM THỜI CHƯA CÓ. \r\nCHÚNG TÔI SẼ CẬP NHẬT SAU";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(439, 45);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(69, 21);
-            this.checkBox1.TabIndex = 29;
-            this.checkBox1.Text = "PB_ID";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(439, 82);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(84, 21);
-            this.checkBox2.TabIndex = 30;
-            this.checkBox2.Text = "PB_TEN";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(439, 122);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(84, 21);
-            this.checkBox3.TabIndex = 31;
-            this.checkBox3.Text = "PB_SDT";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(399, 40);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(70, 21);
-            this.checkBox4.TabIndex = 32;
-            this.checkBox4.Text = "BN_ID";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(399, 77);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(85, 21);
-            this.checkBox5.TabIndex = 33;
-            this.checkBox5.Text = "BN_TEN";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(399, 114);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(119, 21);
-            this.checkBox6.TabIndex = 34;
-            this.checkBox6.Text = "BN_NAMSINH";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(399, 153);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(101, 21);
-            this.checkBox7.TabIndex = 35;
-            this.checkBox7.Text = "BN_DIACHI";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(399, 197);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(85, 21);
-            this.checkBox8.TabIndex = 36;
-            this.checkBox8.Text = "BN_SDT";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(399, 53);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(70, 21);
-            this.checkBox9.TabIndex = 35;
-            this.checkBox9.Text = "DV_ID";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(399, 90);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(85, 21);
-            this.checkBox10.TabIndex = 36;
-            this.checkBox10.Text = "DV_TEN";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(399, 129);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(111, 21);
-            this.checkBox11.TabIndex = 37;
-            this.checkBox11.Text = "DV_DONGIA";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(399, 167);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(108, 21);
-            this.checkBox15.TabIndex = 38;
-            this.checkBox15.Text = "DV_PHONG";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(383, 183);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(109, 21);
-            this.checkBox16.TabIndex = 44;
-            this.checkBox16.Text = "DT_IDKHAM";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(383, 145);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(128, 21);
-            this.checkBox17.TabIndex = 43;
-            this.checkBox17.Text = "DT_GHICHUBS";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(383, 106);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(129, 21);
-            this.checkBox18.TabIndex = 42;
-            this.checkBox18.Text = "DT_TONGTIEN";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(383, 69);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(70, 21);
-            this.checkBox19.TabIndex = 41;
-            this.checkBox19.Text = "DT_ID";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox20
-            // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(391, 156);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(98, 21);
-            this.checkBox20.TabIndex = 48;
-            this.checkBox20.Text = "CTDT_GIA";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // checkBox21
-            // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(391, 118);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(145, 21);
-            this.checkBox21.TabIndex = 47;
-            this.checkBox21.Text = "CTDT_SOLUONG";
-            this.checkBox21.UseVisualStyleBackColor = true;
-            // 
-            // checkBox22
-            // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(391, 79);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(137, 21);
-            this.checkBox22.TabIndex = 46;
-            this.checkBox22.Text = "CTDT_IDTHUOC";
-            this.checkBox22.UseVisualStyleBackColor = true;
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(391, 42);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(119, 21);
-            this.checkBox23.TabIndex = 45;
-            this.checkBox23.Text = "CTDT_IDDON";
-            this.checkBox23.UseVisualStyleBackColor = true;
-            // 
-            // checkBox24
-            // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(391, 193);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(146, 21);
-            this.checkBox24.TabIndex = 49;
-            this.checkBox24.Text = "CTDT_LIEUDUNG";
-            this.checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox25
-            // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Location = new System.Drawing.Point(388, 193);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(122, 21);
-            this.checkBox25.TabIndex = 54;
-            this.checkBox25.Text = "SDDV_CHECK";
-            this.checkBox25.UseVisualStyleBackColor = true;
-            // 
-            // checkBox26
-            // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(388, 156);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(142, 21);
-            this.checkBox26.TabIndex = 53;
-            this.checkBox26.Text = "SDDV_THOIGIAN";
-            this.checkBox26.UseVisualStyleBackColor = true;
-            // 
-            // checkBox27
-            // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(388, 118);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(167, 21);
-            this.checkBox27.TabIndex = 52;
-            this.checkBox27.Text = "SDDV_NGTHUCHIEN";
-            this.checkBox27.UseVisualStyleBackColor = true;
-            // 
-            // checkBox28
-            // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(388, 79);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(128, 21);
-            this.checkBox28.TabIndex = 51;
-            this.checkBox28.Text = "SDDV_IDKHAM";
-            this.checkBox28.UseVisualStyleBackColor = true;
-            // 
-            // checkBox29
-            // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.Location = new System.Drawing.Point(388, 42);
-            this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(108, 21);
-            this.checkBox29.TabIndex = 50;
-            this.checkBox29.Text = "SDDV_IDDV";
-            this.checkBox29.UseVisualStyleBackColor = true;
+            this.label11.Size = new System.Drawing.Size(238, 29);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Xem thong tin audit";
             // 
             // admin
             // 
@@ -1920,6 +1944,7 @@ namespace atbm
             this.dsnguoidung.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.bigtabcontrol.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2050,7 +2075,6 @@ namespace atbm
         private System.Windows.Forms.CheckBox checkBox13;
         private System.Windows.Forms.CheckBox checkBox12;
         private System.Windows.Forms.CheckBox KH_TAIKHAM;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -2077,6 +2101,9 @@ namespace atbm
         private System.Windows.Forms.CheckBox checkBox27;
         private System.Windows.Forms.CheckBox checkBox28;
         private System.Windows.Forms.CheckBox checkBox29;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Button auditbtn;
+        private System.Windows.Forms.Label label11;
     }
 }
 
