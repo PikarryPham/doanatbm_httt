@@ -8,5 +8,7 @@
 - Vui lòng đọc kĩ file "README_SETUP.txt"
 
 ## Ghi chú
-- Hiện tại ứng dụng chỉ có phân hệ 1. Sẽ cập nhật phân hệ 2 sau
+- Hiện tại ứng dụng chỉ có phân hệ 1. 
+- Đang cập nhật thêm phân hệ 1
+- Đang cập nhật phân hệ 2
 
