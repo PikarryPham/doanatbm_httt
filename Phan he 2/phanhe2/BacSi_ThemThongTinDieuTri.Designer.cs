@@ -42,6 +42,10 @@ namespace phanhe2
             this.label7 = new System.Windows.Forms.Label();
             this.tabControlDonThuoc = new System.Windows.Forms.TabControl();
             this.themthongtindonthuoc = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
+            this.taodonthuoc_btn = new System.Windows.Forms.Button();
+            this.iddkhambenhcuadonthuoc = new System.Windows.Forms.NumericUpDown();
+            this.label21 = new System.Windows.Forms.Label();
             this.dschitietthuoc = new System.Windows.Forms.DataGridView();
             this.Chitietthuoc = new System.Windows.Forms.TabControl();
             this.themthongtinthuoc = new System.Windows.Forms.TabPage();
@@ -60,16 +64,26 @@ namespace phanhe2
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dsthuoc = new System.Windows.Forms.DataGridView();
+            this.timtenthuoctxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.xemdsthuoc_btn = new System.Windows.Forms.Button();
             this.themthongtinsudungdv = new System.Windows.Forms.TabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.timdvkhamtxt = new System.Windows.Forms.NumericUpDown();
             this.listDICHVUSUDUNG = new System.Windows.Forms.DataGridView();
             this.tabControlDichVu = new System.Windows.Forms.TabControl();
             this.themdichvu = new System.Windows.Forms.TabPage();
+            this.themsddv_iddv = new System.Windows.Forms.NumericUpDown();
+            this.themttdvu_thoigiansd = new System.Windows.Forms.DateTimePicker();
             this.label18 = new System.Windows.Forms.Label();
             this.themthongtinsddvbtn = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.xoadichvu = new System.Windows.Forms.TabPage();
+            this.madichvu_xoasddvu = new System.Windows.Forms.NumericUpDown();
+            this.xoattdvu_thoigiansd = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
             this.xoathongtinsddv_btn = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
@@ -81,24 +95,11 @@ namespace phanhe2
             this.makhambenh_themdieutri = new System.Windows.Forms.NumericUpDown();
             this.ngaykham_themdv = new System.Windows.Forms.DateTimePicker();
             this.ngaytaikham_themdieutri = new System.Windows.Forms.DateTimePicker();
-            this.timdvkhamtxt = new System.Windows.Forms.NumericUpDown();
-            this.themttdvu_thoigiansd = new System.Windows.Forms.DateTimePicker();
-            this.xoattdvu_thoigiansd = new System.Windows.Forms.DateTimePicker();
-            this.themsddv_iddv = new System.Windows.Forms.NumericUpDown();
-            this.madichvu_xoasddvu = new System.Windows.Forms.NumericUpDown();
-            this.timtenthuoctxt = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
-            this.iddkhambenhcuadonthuoc = new System.Windows.Forms.NumericUpDown();
-            this.label21 = new System.Windows.Forms.Label();
-            this.taodonthuoc_btn = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.tabControlDonThuoc.SuspendLayout();
             this.themthongtindonthuoc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iddkhambenhcuadonthuoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dschitietthuoc)).BeginInit();
             this.Chitietthuoc.SuspendLayout();
             this.themthongtinthuoc.SuspendLayout();
@@ -106,18 +107,17 @@ namespace phanhe2
             this.xoathongtinthuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsthuoc)).BeginInit();
             this.themthongtinsudungdv.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timdvkhamtxt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listDICHVUSUDUNG)).BeginInit();
             this.tabControlDichVu.SuspendLayout();
             this.themdichvu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.themsddv_iddv)).BeginInit();
             this.xoadichvu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.madichvu_xoasddvu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listdichvukhambenh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.makhambenh_themdieutri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timdvkhamtxt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.themsddv_iddv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.madichvu_xoasddvu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iddkhambenhcuadonthuoc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -246,6 +246,51 @@ namespace phanhe2
             this.themthongtindonthuoc.TabIndex = 0;
             this.themthongtindonthuoc.Text = "Them thong tin don thuoc";
             this.themthongtindonthuoc.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(611, 266);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(294, 29);
+            this.label25.TabIndex = 70;
+            this.label25.Text = "Thong tin don thuoc moi";
+            // 
+            // taodonthuoc_btn
+            // 
+            this.taodonthuoc_btn.Location = new System.Drawing.Point(180, 310);
+            this.taodonthuoc_btn.Name = "taodonthuoc_btn";
+            this.taodonthuoc_btn.Size = new System.Drawing.Size(213, 34);
+            this.taodonthuoc_btn.TabIndex = 69;
+            this.taodonthuoc_btn.Text = "Tao don thuoc";
+            this.taodonthuoc_btn.UseVisualStyleBackColor = true;
+            // 
+            // iddkhambenhcuadonthuoc
+            // 
+            this.iddkhambenhcuadonthuoc.Location = new System.Drawing.Point(280, 266);
+            this.iddkhambenhcuadonthuoc.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.iddkhambenhcuadonthuoc.Name = "iddkhambenhcuadonthuoc";
+            this.iddkhambenhcuadonthuoc.Size = new System.Drawing.Size(237, 22);
+            this.iddkhambenhcuadonthuoc.TabIndex = 68;
+            this.iddkhambenhcuadonthuoc.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(21, 268);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(224, 17);
+            this.label21.TabIndex = 67;
+            this.label21.Text = "Don thuoc nay cua ma kham benh";
             // 
             // dschitietthuoc
             // 
@@ -428,6 +473,14 @@ namespace phanhe2
             this.dsthuoc.Size = new System.Drawing.Size(932, 151);
             this.dsthuoc.TabIndex = 30;
             // 
+            // timtenthuoctxt
+            // 
+            this.timtenthuoctxt.Location = new System.Drawing.Point(126, 24);
+            this.timtenthuoctxt.Name = "timtenthuoctxt";
+            this.timtenthuoctxt.Size = new System.Drawing.Size(603, 22);
+            this.timtenthuoctxt.TabIndex = 29;
+            this.timtenthuoctxt.UseWaitCursor = true;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -466,6 +519,69 @@ namespace phanhe2
             this.themthongtinsudungdv.Text = "Them thong tin su dung dich vu";
             this.themthongtinsudungdv.UseVisualStyleBackColor = true;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(572, 286);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(404, 29);
+            this.label24.TabIndex = 73;
+            this.label24.Text = "Thong tin su dung dich vu moi tao";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(280, 284);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(266, 22);
+            this.numericUpDown1.TabIndex = 72;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(17, 286);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(246, 17);
+            this.label22.TabIndex = 71;
+            this.label22.Text = "Thong tin dvu nay cua ma kham benh";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(15, 248);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(404, 29);
+            this.label23.TabIndex = 70;
+            this.label23.Text = "Tao thong tin su dung dich vu moi";
+            // 
+            // timdvkhamtxt
+            // 
+            this.timdvkhamtxt.Location = new System.Drawing.Point(188, 25);
+            this.timdvkhamtxt.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.timdvkhamtxt.Name = "timdvkhamtxt";
+            this.timdvkhamtxt.Size = new System.Drawing.Size(474, 22);
+            this.timdvkhamtxt.TabIndex = 66;
+            this.timdvkhamtxt.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // listDICHVUSUDUNG
             // 
             this.listDICHVUSUDUNG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
@@ -501,6 +617,34 @@ namespace phanhe2
             this.themdichvu.TabIndex = 0;
             this.themdichvu.Text = "Them thong tin su dung dich vu";
             this.themdichvu.UseVisualStyleBackColor = true;
+            // 
+            // themsddv_iddv
+            // 
+            this.themsddv_iddv.Location = new System.Drawing.Point(253, 24);
+            this.themsddv_iddv.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.themsddv_iddv.Name = "themsddv_iddv";
+            this.themsddv_iddv.Size = new System.Drawing.Size(251, 22);
+            this.themsddv_iddv.TabIndex = 69;
+            this.themsddv_iddv.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // themttdvu_thoigiansd
+            // 
+            this.themttdvu_thoigiansd.CustomFormat = "yyyy-MM-dd";
+            this.themttdvu_thoigiansd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.themttdvu_thoigiansd.Location = new System.Drawing.Point(253, 70);
+            this.themttdvu_thoigiansd.Margin = new System.Windows.Forms.Padding(4);
+            this.themttdvu_thoigiansd.Name = "themttdvu_thoigiansd";
+            this.themttdvu_thoigiansd.Size = new System.Drawing.Size(251, 22);
+            this.themttdvu_thoigiansd.TabIndex = 68;
+            this.themttdvu_thoigiansd.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
             // 
             // label18
             // 
@@ -543,6 +687,34 @@ namespace phanhe2
             this.xoadichvu.TabIndex = 1;
             this.xoadichvu.Text = "Xoa thong tin su dung dich vu";
             this.xoadichvu.UseVisualStyleBackColor = true;
+            // 
+            // madichvu_xoasddvu
+            // 
+            this.madichvu_xoasddvu.Location = new System.Drawing.Point(251, 23);
+            this.madichvu_xoasddvu.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.madichvu_xoasddvu.Name = "madichvu_xoasddvu";
+            this.madichvu_xoasddvu.Size = new System.Drawing.Size(251, 22);
+            this.madichvu_xoasddvu.TabIndex = 70;
+            this.madichvu_xoasddvu.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // xoattdvu_thoigiansd
+            // 
+            this.xoattdvu_thoigiansd.CustomFormat = "yyyy-MM-dd";
+            this.xoattdvu_thoigiansd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.xoattdvu_thoigiansd.Location = new System.Drawing.Point(251, 82);
+            this.xoattdvu_thoigiansd.Margin = new System.Windows.Forms.Padding(4);
+            this.xoattdvu_thoigiansd.Name = "xoattdvu_thoigiansd";
+            this.xoattdvu_thoigiansd.Size = new System.Drawing.Size(251, 22);
+            this.xoattdvu_thoigiansd.TabIndex = 69;
+            this.xoattdvu_thoigiansd.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
             // 
             // label19
             // 
@@ -607,6 +779,7 @@ namespace phanhe2
             this.taothongtinkham_btn.TabIndex = 31;
             this.taothongtinkham_btn.Text = "Tao thong tin kham";
             this.taothongtinkham_btn.UseVisualStyleBackColor = true;
+            this.taothongtinkham_btn.Click += new System.EventHandler(this.taothongtinkham_btn_Click);
             // 
             // quayvebtn
             // 
@@ -618,6 +791,7 @@ namespace phanhe2
             this.quayvebtn.TabIndex = 32;
             this.quayvebtn.Text = "Quay ve";
             this.quayvebtn.UseVisualStyleBackColor = false;
+            this.quayvebtn.Click += new System.EventHandler(this.quayvebtn_Click);
             // 
             // makhambenh_themdieutri
             // 
@@ -658,87 +832,6 @@ namespace phanhe2
             this.ngaytaikham_themdieutri.TabIndex = 67;
             this.ngaytaikham_themdieutri.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
             // 
-            // timdvkhamtxt
-            // 
-            this.timdvkhamtxt.Location = new System.Drawing.Point(188, 25);
-            this.timdvkhamtxt.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.timdvkhamtxt.Name = "timdvkhamtxt";
-            this.timdvkhamtxt.Size = new System.Drawing.Size(474, 22);
-            this.timdvkhamtxt.TabIndex = 66;
-            this.timdvkhamtxt.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // themttdvu_thoigiansd
-            // 
-            this.themttdvu_thoigiansd.CustomFormat = "yyyy-MM-dd";
-            this.themttdvu_thoigiansd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.themttdvu_thoigiansd.Location = new System.Drawing.Point(253, 70);
-            this.themttdvu_thoigiansd.Margin = new System.Windows.Forms.Padding(4);
-            this.themttdvu_thoigiansd.Name = "themttdvu_thoigiansd";
-            this.themttdvu_thoigiansd.Size = new System.Drawing.Size(251, 22);
-            this.themttdvu_thoigiansd.TabIndex = 68;
-            this.themttdvu_thoigiansd.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
-            // 
-            // xoattdvu_thoigiansd
-            // 
-            this.xoattdvu_thoigiansd.CustomFormat = "yyyy-MM-dd";
-            this.xoattdvu_thoigiansd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.xoattdvu_thoigiansd.Location = new System.Drawing.Point(251, 82);
-            this.xoattdvu_thoigiansd.Margin = new System.Windows.Forms.Padding(4);
-            this.xoattdvu_thoigiansd.Name = "xoattdvu_thoigiansd";
-            this.xoattdvu_thoigiansd.Size = new System.Drawing.Size(251, 22);
-            this.xoattdvu_thoigiansd.TabIndex = 69;
-            this.xoattdvu_thoigiansd.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
-            // 
-            // themsddv_iddv
-            // 
-            this.themsddv_iddv.Location = new System.Drawing.Point(253, 24);
-            this.themsddv_iddv.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.themsddv_iddv.Name = "themsddv_iddv";
-            this.themsddv_iddv.Size = new System.Drawing.Size(251, 22);
-            this.themsddv_iddv.TabIndex = 69;
-            this.themsddv_iddv.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // madichvu_xoasddvu
-            // 
-            this.madichvu_xoasddvu.Location = new System.Drawing.Point(251, 23);
-            this.madichvu_xoasddvu.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.madichvu_xoasddvu.Name = "madichvu_xoasddvu";
-            this.madichvu_xoasddvu.Size = new System.Drawing.Size(251, 22);
-            this.madichvu_xoasddvu.TabIndex = 70;
-            this.madichvu_xoasddvu.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // timtenthuoctxt
-            // 
-            this.timtenthuoctxt.Location = new System.Drawing.Point(126, 24);
-            this.timtenthuoctxt.Name = "timtenthuoctxt";
-            this.timtenthuoctxt.Size = new System.Drawing.Size(603, 22);
-            this.timtenthuoctxt.TabIndex = 29;
-            this.timtenthuoctxt.UseWaitCursor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -761,101 +854,12 @@ namespace phanhe2
             this.label12.TabIndex = 69;
             this.label12.Text = "Thong tin kham benh";
             // 
-            // iddkhambenhcuadonthuoc
-            // 
-            this.iddkhambenhcuadonthuoc.Location = new System.Drawing.Point(280, 266);
-            this.iddkhambenhcuadonthuoc.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.iddkhambenhcuadonthuoc.Name = "iddkhambenhcuadonthuoc";
-            this.iddkhambenhcuadonthuoc.Size = new System.Drawing.Size(237, 22);
-            this.iddkhambenhcuadonthuoc.TabIndex = 68;
-            this.iddkhambenhcuadonthuoc.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(21, 268);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(224, 17);
-            this.label21.TabIndex = 67;
-            this.label21.Text = "Don thuoc nay cua ma kham benh";
-            // 
-            // taodonthuoc_btn
-            // 
-            this.taodonthuoc_btn.Location = new System.Drawing.Point(180, 310);
-            this.taodonthuoc_btn.Name = "taodonthuoc_btn";
-            this.taodonthuoc_btn.Size = new System.Drawing.Size(213, 34);
-            this.taodonthuoc_btn.TabIndex = 69;
-            this.taodonthuoc_btn.Text = "Tao don thuoc";
-            this.taodonthuoc_btn.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(280, 284);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(266, 22);
-            this.numericUpDown1.TabIndex = 72;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(17, 286);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(246, 17);
-            this.label22.TabIndex = 71;
-            this.label22.Text = "Thong tin dvu nay cua ma kham benh";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(15, 248);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(404, 29);
-            this.label23.TabIndex = 70;
-            this.label23.Text = "Tao thong tin su dung dich vu moi";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(572, 286);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(404, 29);
-            this.label24.TabIndex = 73;
-            this.label24.Text = "Thong tin su dung dich vu moi tao";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(611, 266);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(294, 29);
-            this.label25.TabIndex = 70;
-            this.label25.Text = "Thong tin don thuoc moi";
-            // 
             // BacSi_ThemThongTinDieuTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1032, 1055);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dataGridView1);
@@ -878,9 +882,11 @@ namespace phanhe2
             this.Controls.Add(this.username);
             this.Name = "BacSi_ThemThongTinDieuTri";
             this.Text = "BacSi_ThemThongTinDieuTri";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControlDonThuoc.ResumeLayout(false);
             this.themthongtindonthuoc.ResumeLayout(false);
             this.themthongtindonthuoc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iddkhambenhcuadonthuoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dschitietthuoc)).EndInit();
             this.Chitietthuoc.ResumeLayout(false);
             this.themthongtinthuoc.ResumeLayout(false);
@@ -891,20 +897,19 @@ namespace phanhe2
             ((System.ComponentModel.ISupportInitialize)(this.dsthuoc)).EndInit();
             this.themthongtinsudungdv.ResumeLayout(false);
             this.themthongtinsudungdv.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timdvkhamtxt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listDICHVUSUDUNG)).EndInit();
             this.tabControlDichVu.ResumeLayout(false);
             this.themdichvu.ResumeLayout(false);
             this.themdichvu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.themsddv_iddv)).EndInit();
             this.xoadichvu.ResumeLayout(false);
             this.xoadichvu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.madichvu_xoasddvu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listdichvukhambenh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.makhambenh_themdieutri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timdvkhamtxt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.themsddv_iddv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.madichvu_xoasddvu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iddkhambenhcuadonthuoc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

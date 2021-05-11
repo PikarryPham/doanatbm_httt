@@ -82,6 +82,7 @@ namespace phanhe2
             // 
             this.pswtxt_login.Location = new System.Drawing.Point(230, 253);
             this.pswtxt_login.Name = "pswtxt_login";
+            this.pswtxt_login.PasswordChar = '*';
             this.pswtxt_login.Size = new System.Drawing.Size(568, 22);
             this.pswtxt_login.TabIndex = 4;
             // 
@@ -124,6 +125,7 @@ namespace phanhe2
             this.dangnhapbtn.TabIndex = 7;
             this.dangnhapbtn.Text = "Dang nhap";
             this.dangnhapbtn.UseVisualStyleBackColor = false;
+            this.dangnhapbtn.Click += new System.EventHandler(this.dangnhapbtn_Click);
             // 
             // label5
             // 

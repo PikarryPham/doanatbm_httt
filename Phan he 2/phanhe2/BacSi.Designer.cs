@@ -66,6 +66,7 @@ namespace phanhe2
             this.xemthongtindtribenh.TabIndex = 4;
             this.xemthongtindtribenh.Text = "Xem thong tin dieu tri benh";
             this.xemthongtindtribenh.UseVisualStyleBackColor = true;
+            this.xemthongtindtribenh.Click += new System.EventHandler(this.xemthongtindtribenh_Click);
             // 
             // themthongtindieutribenh
             // 
@@ -75,6 +76,7 @@ namespace phanhe2
             this.themthongtindieutribenh.TabIndex = 5;
             this.themthongtindieutribenh.Text = "Them thong tin dieu tri benh";
             this.themthongtindieutribenh.UseVisualStyleBackColor = true;
+            this.themthongtindieutribenh.Click += new System.EventHandler(this.themthongtindieutribenh_Click);
             // 
             // suathongtindieutribenh
             // 
@@ -84,6 +86,7 @@ namespace phanhe2
             this.suathongtindieutribenh.TabIndex = 6;
             this.suathongtindieutribenh.Text = "Sua thong tin dieu tri benh";
             this.suathongtindieutribenh.UseVisualStyleBackColor = true;
+            this.suathongtindieutribenh.Click += new System.EventHandler(this.suathongtindieutribenh_Click);
             // 
             // dangxuatbtn
             // 
@@ -95,6 +98,7 @@ namespace phanhe2
             this.dangxuatbtn.TabIndex = 7;
             this.dangxuatbtn.Text = "Dang xuat";
             this.dangxuatbtn.UseVisualStyleBackColor = false;
+            this.dangxuatbtn.Click += new System.EventHandler(this.dangxuatbtn_Click);
             // 
             // BacSi
             // 

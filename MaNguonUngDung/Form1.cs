@@ -282,6 +282,7 @@ namespace atbm
                 OracleParameter quanlyRole_passuser = new OracleParameter("@MK_moi", OracleDbType.Varchar2);
                 quanlyRole_passuser.Value = passuser;
                 objCmd.Parameters.Add(quanlyRole_passuser);
+
                 objCmd.Parameters.Add(new OracleParameter("@p_Error", OracleDbType.Varchar2, 32767));
                 objCmd.Parameters["@p_Error"].Direction = ParameterDirection.Output;
                 objCmd.ExecuteNonQuery();

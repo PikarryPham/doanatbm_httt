@@ -46,6 +46,7 @@ namespace phanhe2
             this.dangxuatbtn.TabIndex = 13;
             this.dangxuatbtn.Text = "Dang xuat";
             this.dangxuatbtn.UseVisualStyleBackColor = false;
+            this.dangxuatbtn.Click += new System.EventHandler(this.dangxuatbtn_Click);
             // 
             // label1
             // 
@@ -85,6 +86,7 @@ namespace phanhe2
             this.xemthongtinnvbtn.TabIndex = 11;
             this.xemthongtinnvbtn.Text = "Xem thong tin nhan vien";
             this.xemthongtinnvbtn.UseVisualStyleBackColor = true;
+            this.xemthongtinnvbtn.Click += new System.EventHandler(this.xemthongtinnvbtn_Click);
             // 
             // NhanVienKeToan
             // 

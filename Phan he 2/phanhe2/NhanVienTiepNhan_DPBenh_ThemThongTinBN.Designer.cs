@@ -40,11 +40,11 @@ namespace phanhe2
             this.tenbn_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.namsinhtxt = new System.Windows.Forms.TextBox();
             this.diachitxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.sodienthoaitxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.namsinh = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,8 +56,9 @@ namespace phanhe2
             this.quayvebtn.Name = "quayvebtn";
             this.quayvebtn.Size = new System.Drawing.Size(119, 47);
             this.quayvebtn.TabIndex = 35;
-            this.quayvebtn.Text = "Quay ve";
+            this.quayvebtn.Text = "Dang xuat";
             this.quayvebtn.UseVisualStyleBackColor = false;
+            this.quayvebtn.Click += new System.EventHandler(this.quayvebtn_Click);
             // 
             // label1
             // 
@@ -85,7 +86,7 @@ namespace phanhe2
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label2.Location = new System.Drawing.Point(19, 118);
+            this.label2.Location = new System.Drawing.Point(20, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(316, 29);
             this.label2.TabIndex = 36;
@@ -98,17 +99,18 @@ namespace phanhe2
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(609, 280);
+            this.dataGridView1.Size = new System.Drawing.Size(593, 299);
             this.dataGridView1.TabIndex = 37;
             // 
             // xemdsbenhnhan_btn
             // 
-            this.xemdsbenhnhan_btn.Location = new System.Drawing.Point(649, 256);
+            this.xemdsbenhnhan_btn.Location = new System.Drawing.Point(634, 297);
             this.xemdsbenhnhan_btn.Name = "xemdsbenhnhan_btn";
             this.xemdsbenhnhan_btn.Size = new System.Drawing.Size(218, 41);
             this.xemdsbenhnhan_btn.TabIndex = 38;
             this.xemdsbenhnhan_btn.Text = "Xem danh sach benh nhan";
             this.xemdsbenhnhan_btn.UseVisualStyleBackColor = true;
+            this.xemdsbenhnhan_btn.Click += new System.EventHandler(this.xemdsbenhnhan_btn_Click);
             // 
             // label3
             // 
@@ -129,6 +131,7 @@ namespace phanhe2
             this.taothongtinbenhnhan_btn.TabIndex = 40;
             this.taothongtinbenhnhan_btn.Text = "Tao benh nhan moi";
             this.taothongtinbenhnhan_btn.UseVisualStyleBackColor = true;
+            this.taothongtinbenhnhan_btn.Click += new System.EventHandler(this.taothongtinbenhnhan_btn_Click);
             // 
             // tenbn_txt
             // 
@@ -151,16 +154,9 @@ namespace phanhe2
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(32, 561);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 17);
+            this.label5.Size = new System.Drawing.Size(38, 17);
             this.label5.TabIndex = 43;
-            this.label5.Text = "Nam sinh";
-            // 
-            // namsinhtxt
-            // 
-            this.namsinhtxt.Location = new System.Drawing.Point(155, 558);
-            this.namsinhtxt.Name = "namsinhtxt";
-            this.namsinhtxt.Size = new System.Drawing.Size(325, 22);
-            this.namsinhtxt.TabIndex = 44;
+            this.label5.Text = "DOB";
             // 
             // diachitxt
             // 
@@ -194,16 +190,24 @@ namespace phanhe2
             this.label7.TabIndex = 47;
             this.label7.Text = "So dien thoai";
             // 
+            // namsinh
+            // 
+            this.namsinh.Location = new System.Drawing.Point(155, 556);
+            this.namsinh.Name = "namsinh";
+            this.namsinh.Size = new System.Drawing.Size(325, 22);
+            this.namsinh.TabIndex = 49;
+            // 
             // NhanVienTiepNhan_DPBenh_ThemThongTinBN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(878, 729);
+            this.Controls.Add(this.namsinh);
             this.Controls.Add(this.sodienthoaitxt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.diachitxt);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.namsinhtxt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tenbn_txt);
             this.Controls.Add(this.label4);
@@ -236,10 +240,10 @@ namespace phanhe2
         private System.Windows.Forms.TextBox tenbn_txt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox namsinhtxt;
         private System.Windows.Forms.TextBox diachitxt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox sodienthoaitxt;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox namsinh;
     }
 }

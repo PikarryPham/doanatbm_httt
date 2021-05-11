@@ -15,6 +15,23 @@ namespace phanhe2
         public NhanVienKeToan()
         {
             InitializeComponent();
+            username.Text = ThongTinNV._username;
+        }
+
+        private void dangxuatbtn_Click(object sender, EventArgs e)
+        {
+            Form form = new Form1();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Close();
+        }
+
+        private void xemthongtinnvbtn_Click(object sender, EventArgs e)
+        {
+            Form form = new NVKT_XemThongTinNhanVien();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Close();
         }
     }
 }

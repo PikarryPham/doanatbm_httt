@@ -32,10 +32,10 @@ namespace phanhe2
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
-            this.btn_suathongtinkhamcuabn = new System.Windows.Forms.Button();
-            this.suatrieuchung = new System.Windows.Forms.TextBox();
+            this.btnxemdsnhanvien = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.manhanvien_xemnv = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +49,7 @@ namespace phanhe2
             this.button1.TabIndex = 35;
             this.button1.Text = "Quay ve";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -71,21 +72,15 @@ namespace phanhe2
             this.username.TabIndex = 37;
             this.username.Text = "username";
             // 
-            // btn_suathongtinkhamcuabn
+            // btnxemdsnhanvien
             // 
-            this.btn_suathongtinkhamcuabn.Location = new System.Drawing.Point(274, 208);
-            this.btn_suathongtinkhamcuabn.Name = "btn_suathongtinkhamcuabn";
-            this.btn_suathongtinkhamcuabn.Size = new System.Drawing.Size(276, 50);
-            this.btn_suathongtinkhamcuabn.TabIndex = 38;
-            this.btn_suathongtinkhamcuabn.Text = "Xem danh sach nhan vien cua he thong";
-            this.btn_suathongtinkhamcuabn.UseVisualStyleBackColor = true;
-            // 
-            // suatrieuchung
-            // 
-            this.suatrieuchung.Location = new System.Drawing.Point(145, 163);
-            this.suatrieuchung.Name = "suatrieuchung";
-            this.suatrieuchung.Size = new System.Drawing.Size(621, 22);
-            this.suatrieuchung.TabIndex = 40;
+            this.btnxemdsnhanvien.Location = new System.Drawing.Point(274, 208);
+            this.btnxemdsnhanvien.Name = "btnxemdsnhanvien";
+            this.btnxemdsnhanvien.Size = new System.Drawing.Size(276, 50);
+            this.btnxemdsnhanvien.TabIndex = 38;
+            this.btnxemdsnhanvien.Text = "Xem danh sach nhan vien cua he thong";
+            this.btnxemdsnhanvien.UseVisualStyleBackColor = true;
+            this.btnxemdsnhanvien.Click += new System.EventHandler(this.btnxemdsnhanvien_Click);
             // 
             // label3
             // 
@@ -107,15 +102,23 @@ namespace phanhe2
             this.dataGridView1.Size = new System.Drawing.Size(739, 276);
             this.dataGridView1.TabIndex = 41;
             // 
+            // manhanvien_xemnv
+            // 
+            this.manhanvien_xemnv.Location = new System.Drawing.Point(145, 163);
+            this.manhanvien_xemnv.Name = "manhanvien_xemnv";
+            this.manhanvien_xemnv.Size = new System.Drawing.Size(621, 22);
+            this.manhanvien_xemnv.TabIndex = 40;
+            // 
             // NVKT_XemThongTinNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 572);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.suatrieuchung);
+            this.Controls.Add(this.manhanvien_xemnv);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btn_suathongtinkhamcuabn);
+            this.Controls.Add(this.btnxemdsnhanvien);
             this.Controls.Add(this.username);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -131,9 +134,9 @@ namespace phanhe2
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label username;
-        private System.Windows.Forms.Button btn_suathongtinkhamcuabn;
-        private System.Windows.Forms.TextBox suatrieuchung;
+        private System.Windows.Forms.Button btnxemdsnhanvien;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox manhanvien_xemnv;
     }
 }

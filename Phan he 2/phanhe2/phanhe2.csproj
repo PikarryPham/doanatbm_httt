@@ -72,11 +72,19 @@
     <Compile Include="BacSi_XemThongTinDieuTri.Designer.cs">
       <DependentUpon>BacSi_XemThongTinDieuTri.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBOracleUtils.cs" />
+    <Compile Include="DBUtils.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienKeToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienKeToan.Designer.cs">
+      <DependentUpon>NhanVienKeToan.cs</DependentUpon>
     </Compile>
     <Compile Include="NhanVienTiepNhan_DPBenh_ThemThongTinBN.cs">
       <SubType>Form</SubType>
@@ -84,8 +92,15 @@
     <Compile Include="NhanVienTiepNhan_DPBenh_ThemThongTinBN.Designer.cs">
       <DependentUpon>NhanVienTiepNhan_DPBenh_ThemThongTinBN.cs</DependentUpon>
     </Compile>
+    <Compile Include="NVKT_XemThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NVKT_XemThongTinNhanVien.Designer.cs">
+      <DependentUpon>NVKT_XemThongTinNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThongTinNV.cs" />
     <EmbeddedResource Include="BacSi.resx">
       <DependentUpon>BacSi.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,8 +116,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienKeToan.resx">
+      <DependentUpon>NhanVienKeToan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhanVienTiepNhan_DPBenh_ThemThongTinBN.resx">
       <DependentUpon>NhanVienTiepNhan_DPBenh_ThemThongTinBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NVKT_XemThongTinNhanVien.resx">
+      <DependentUpon>NVKT_XemThongTinNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
