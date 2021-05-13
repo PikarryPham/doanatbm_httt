@@ -10,5 +10,6 @@ namespace phanhe2
     {
         public static string _username;
         public static string _psw;
+        public static string _loainv;
     }
 }

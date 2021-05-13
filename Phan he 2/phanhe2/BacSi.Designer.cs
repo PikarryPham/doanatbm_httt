@@ -33,8 +33,8 @@ namespace phanhe2
             this.label1 = new System.Windows.Forms.Label();
             this.xemthongtindtribenh = new System.Windows.Forms.Button();
             this.themthongtindieutribenh = new System.Windows.Forms.Button();
-            this.suathongtindieutribenh = new System.Windows.Forms.Button();
             this.dangxuatbtn = new System.Windows.Forms.Button();
+            this.xemthongbao_bs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // username
@@ -78,16 +78,6 @@ namespace phanhe2
             this.themthongtindieutribenh.UseVisualStyleBackColor = true;
             this.themthongtindieutribenh.Click += new System.EventHandler(this.themthongtindieutribenh_Click);
             // 
-            // suathongtindieutribenh
-            // 
-            this.suathongtindieutribenh.Location = new System.Drawing.Point(283, 321);
-            this.suathongtindieutribenh.Name = "suathongtindieutribenh";
-            this.suathongtindieutribenh.Size = new System.Drawing.Size(221, 58);
-            this.suathongtindieutribenh.TabIndex = 6;
-            this.suathongtindieutribenh.Text = "Sua thong tin dieu tri benh";
-            this.suathongtindieutribenh.UseVisualStyleBackColor = true;
-            this.suathongtindieutribenh.Click += new System.EventHandler(this.suathongtindieutribenh_Click);
-            // 
             // dangxuatbtn
             // 
             this.dangxuatbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -100,13 +90,23 @@ namespace phanhe2
             this.dangxuatbtn.UseVisualStyleBackColor = false;
             this.dangxuatbtn.Click += new System.EventHandler(this.dangxuatbtn_Click);
             // 
+            // xemthongbao_bs
+            // 
+            this.xemthongbao_bs.Location = new System.Drawing.Point(283, 334);
+            this.xemthongbao_bs.Name = "xemthongbao_bs";
+            this.xemthongbao_bs.Size = new System.Drawing.Size(221, 58);
+            this.xemthongbao_bs.TabIndex = 8;
+            this.xemthongbao_bs.Text = "Xem thong bao";
+            this.xemthongbao_bs.UseVisualStyleBackColor = true;
+            this.xemthongbao_bs.Click += new System.EventHandler(this.xemthongbao_bs_Click);
+            // 
             // BacSi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 409);
+            this.ClientSize = new System.Drawing.Size(821, 432);
+            this.Controls.Add(this.xemthongbao_bs);
             this.Controls.Add(this.dangxuatbtn);
-            this.Controls.Add(this.suathongtindieutribenh);
             this.Controls.Add(this.themthongtindieutribenh);
             this.Controls.Add(this.xemthongtindtribenh);
             this.Controls.Add(this.label1);
@@ -124,7 +124,7 @@ namespace phanhe2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button xemthongtindtribenh;
         private System.Windows.Forms.Button themthongtindieutribenh;
-        private System.Windows.Forms.Button suathongtindieutribenh;
         private System.Windows.Forms.Button dangxuatbtn;
+        private System.Windows.Forms.Button xemthongbao_bs;
     }
 }

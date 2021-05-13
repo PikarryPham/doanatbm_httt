@@ -1,7 +1,7 @@
 ﻿
 namespace phanhe2
 {
-    partial class NhanVienKeToan
+    partial class NVTN_TrangQuanLy
     {
         /// <summary>
         /// Required designer variable.
@@ -32,18 +32,18 @@ namespace phanhe2
             this.dangxuatbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
-            this.xemthongtinnvbtn = new System.Windows.Forms.Button();
-            this.xemtb_nvkt = new System.Windows.Forms.Button();
+            this.xemtb = new System.Windows.Forms.Button();
+            this.qlthongtinbn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dangxuatbtn
             // 
             this.dangxuatbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.dangxuatbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dangxuatbtn.Location = new System.Drawing.Point(16, 13);
+            this.dangxuatbtn.Location = new System.Drawing.Point(16, 18);
             this.dangxuatbtn.Name = "dangxuatbtn";
             this.dangxuatbtn.Size = new System.Drawing.Size(110, 35);
-            this.dangxuatbtn.TabIndex = 13;
+            this.dangxuatbtn.TabIndex = 16;
             this.dangxuatbtn.Text = "Dang xuat";
             this.dangxuatbtn.UseVisualStyleBackColor = false;
             this.dangxuatbtn.Click += new System.EventHandler(this.dangxuatbtn_Click);
@@ -53,55 +53,55 @@ namespace phanhe2
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(169, 75);
+            this.label1.Location = new System.Drawing.Point(158, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(493, 38);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Trang ca nhan nhan vien ke toan";
+            this.label1.Size = new System.Drawing.Size(519, 38);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Trang ca nhan nhan vien tiep nhan";
             // 
             // username
             // 
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(683, 13);
+            this.username.Location = new System.Drawing.Point(683, 18);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(99, 25);
-            this.username.TabIndex = 8;
+            this.username.TabIndex = 14;
             this.username.Text = "username";
             // 
-            // xemthongtinnvbtn
+            // xemtb
             // 
-            this.xemthongtinnvbtn.Location = new System.Drawing.Point(287, 156);
-            this.xemthongtinnvbtn.Name = "xemthongtinnvbtn";
-            this.xemthongtinnvbtn.Size = new System.Drawing.Size(221, 58);
-            this.xemthongtinnvbtn.TabIndex = 11;
-            this.xemthongtinnvbtn.Text = "Xem thong tin nhan vien";
-            this.xemthongtinnvbtn.UseVisualStyleBackColor = true;
-            this.xemthongtinnvbtn.Click += new System.EventHandler(this.xemthongtinnvbtn_Click);
+            this.xemtb.Location = new System.Drawing.Point(287, 271);
+            this.xemtb.Name = "xemtb";
+            this.xemtb.Size = new System.Drawing.Size(221, 58);
+            this.xemtb.TabIndex = 18;
+            this.xemtb.Text = "Xem thong bao";
+            this.xemtb.UseVisualStyleBackColor = true;
+            this.xemtb.Click += new System.EventHandler(this.xemtb_Click);
             // 
-            // xemtb_nvkt
+            // qlthongtinbn
             // 
-            this.xemtb_nvkt.Location = new System.Drawing.Point(287, 262);
-            this.xemtb_nvkt.Name = "xemtb_nvkt";
-            this.xemtb_nvkt.Size = new System.Drawing.Size(221, 58);
-            this.xemtb_nvkt.TabIndex = 14;
-            this.xemtb_nvkt.Text = "Xem thong bao";
-            this.xemtb_nvkt.UseVisualStyleBackColor = true;
-            this.xemtb_nvkt.Click += new System.EventHandler(this.xemtb_nvkt_Click);
+            this.qlthongtinbn.Location = new System.Drawing.Point(287, 155);
+            this.qlthongtinbn.Name = "qlthongtinbn";
+            this.qlthongtinbn.Size = new System.Drawing.Size(221, 58);
+            this.qlthongtinbn.TabIndex = 17;
+            this.qlthongtinbn.Text = "Quan ly thong tin benh nhan";
+            this.qlthongtinbn.UseVisualStyleBackColor = true;
+            this.qlthongtinbn.Click += new System.EventHandler(this.qlthongtinbn_Click);
             // 
-            // NhanVienKeToan
+            // NVTN_TrangQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 349);
-            this.Controls.Add(this.xemtb_nvkt);
+            this.ClientSize = new System.Drawing.Size(800, 368);
+            this.Controls.Add(this.xemtb);
+            this.Controls.Add(this.qlthongtinbn);
             this.Controls.Add(this.dangxuatbtn);
-            this.Controls.Add(this.xemthongtinnvbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.username);
-            this.Name = "NhanVienKeToan";
-            this.Text = "NhanVienKeToan";
+            this.Name = "NVTN_TrangQuanLy";
+            this.Text = "NVTN_TrangQuanLy";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +112,7 @@ namespace phanhe2
         private System.Windows.Forms.Button dangxuatbtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label username;
-        private System.Windows.Forms.Button xemthongtinnvbtn;
-        private System.Windows.Forms.Button xemtb_nvkt;
+        private System.Windows.Forms.Button xemtb;
+        private System.Windows.Forms.Button qlthongtinbn;
     }
 }

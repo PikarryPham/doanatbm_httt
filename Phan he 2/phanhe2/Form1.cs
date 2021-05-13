@@ -92,6 +92,7 @@ namespace phanhe2
                     string option = comboBox_login.SelectedItem.ToString();
                     if(option == "Bac si")
                     {
+                        ThongTinNV._loainv = "Bac si";
                         Form form = new BacSi();
                         form.StartPosition = FormStartPosition.CenterScreen;
                         form.Show();
@@ -99,13 +100,15 @@ namespace phanhe2
                     }
                     else if(option == "Bo phan tiep tan va dieu phoi benh")
                     {
-                        Form form = new NhanVienTiepNhan_DPBenh_ThemThongTinBN();
+                        ThongTinNV._loainv = "Bo phan tiep tan va dieu phoi benh";
+                        Form form = new NVTN_TrangQuanLy();
                         form.StartPosition = FormStartPosition.CenterScreen;
                         form.Show();
                         this.Hide();
                     }
                     else if(option == "Nhan vien ke toan")
                     {
+                        ThongTinNV._loainv = "Nhan vien ke toan";
                         Form form = new NhanVienKeToan();
                         form.StartPosition = FormStartPosition.CenterScreen;
                         form.Show();

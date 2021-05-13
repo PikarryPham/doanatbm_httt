@@ -70,6 +70,7 @@ namespace phanhe2
             this.label1.Size = new System.Drawing.Size(425, 38);
             this.label1.TabIndex = 34;
             this.label1.Text = "Quan ly thong tin benh nhan";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // username
             // 

@@ -39,6 +39,47 @@ END;
 /
 
 begin
+execute immediate 'drop function C##QLBVIEN.Check_exist_DonKhamBenh';
+exception when others then null;
+end;
+/
+create or replace FUNCTION  C##QLBVIEN.Check_exist_DonKhamBenh(makhambenh in number, mabenhnhan in number)
+    RETURN BOOLEAN
+IS
+    temp number;
+BEGIN
+    SELECT COUNT(*) into temp FROM c##QLBVIEN.KHAM WHERE KH_ID = makhambenh AND KH_IDBN = mabenhnhan;
+    IF temp = 1 THEN
+        RETURN TRUE;
+    ELSE
+        RETURN FALSE;
+    END IF;
+END;
+/
+
+
+begin
+execute immediate 'drop function C##QLBVIEN.Check_exist_DonThuoc';
+exception when others then null;
+end;
+/
+create or replace FUNCTION  C##QLBVIEN.Check_exist_DonThuoc(makhambenh in number, mabenhnhan in number)
+    RETURN BOOLEAN
+IS
+    temp number;
+BEGIN
+    SELECT COUNT(*) into temp FROM c##QLBVIEN.KHAM WHERE KH_ID = makhambenh AND KH_IDBN = mabenhnhan;
+    IF temp = 1 THEN
+        RETURN TRUE;
+    ELSE
+        RETURN FALSE;
+    END IF;
+END;
+/
+
+-------------------------------------------------------------------------------------
+
+begin
 execute immediate 'drop procedure C##QLBVIEN.NV_Xem_ds_benh_nhan ';
 exception when others then null;
 end;
@@ -180,4 +221,27 @@ BEGIN
         WHEN OTHERS THEN
             P_ERROR := 'Co loi xay ra' || SQLERRM;
 END;
+/
 
+---------------- Lien quan toi bac si
+--- Xem thong tin su dung dich vu
+begin
+execute immediate 'drop procedure C##QLBVIEN.BS_XemThongTinSDDV';
+exception when others then null;
+end;
+/
+
+-- Xem thong tin kham benh
+begin
+execute immediate 'drop procedure C##QLBVIEN.BS_XemThongTinKham';
+exception when others then null;
+end;
+/
+-- Xem don thuoc thuoc ve thong tin kham benh
+begin
+execute immediate 'drop procedure C##QLBVIEN.BS_XemThongTinDon_Kham';
+exception when others then null;
+end;
+/
+
+SELECT * FROM C##QLBVIEN.BENH_NHAN;

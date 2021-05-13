@@ -33,3 +33,5 @@ C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật d�
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.pdb
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.NhanVienKeToan.resources
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.NVKT_XemThongTinNhanVien.resources
+C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.NVTN_TrangQuanLy.resources
+C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.XemThongBao.resources

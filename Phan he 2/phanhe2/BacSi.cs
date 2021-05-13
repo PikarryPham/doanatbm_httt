@@ -49,5 +49,13 @@ namespace phanhe2
             form.Show();
             this.Close();
         }
+
+        private void xemthongbao_bs_Click(object sender, EventArgs e)
+        {
+            Form form = new XemThongBao();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Close();
+        }
     }
 }

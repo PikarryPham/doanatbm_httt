@@ -25,7 +25,7 @@ namespace phanhe2
 
         private void quayvebtn_Click(object sender, EventArgs e)
         {
-            Form form = new Form1();
+            Form form = new NVTN_TrangQuanLy();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
             this.Close();
@@ -119,6 +119,11 @@ namespace phanhe2
                 //conn.Dispose();
             }
             Console.Read();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

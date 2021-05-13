@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace phanhe2
 {
-    public partial class NhanVienKeToan : Form
+    public partial class NVTN_TrangQuanLy : Form
     {
-        public NhanVienKeToan()
+        public NVTN_TrangQuanLy()
         {
             InitializeComponent();
             username.Text = ThongTinNV._username;
@@ -26,15 +26,15 @@ namespace phanhe2
             this.Close();
         }
 
-        private void xemthongtinnvbtn_Click(object sender, EventArgs e)
+        private void qlthongtinbn_Click(object sender, EventArgs e)
         {
-            Form form = new NVKT_XemThongTinNhanVien();
+            Form form = new NhanVienTiepNhan_DPBenh_ThemThongTinBN();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
             this.Close();
         }
 
-        private void xemtb_nvkt_Click(object sender, EventArgs e)
+        private void xemtb_Click(object sender, EventArgs e)
         {
             Form form = new XemThongBao();
             form.StartPosition = FormStartPosition.CenterScreen;
