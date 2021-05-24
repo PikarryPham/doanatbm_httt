@@ -26,7 +26,7 @@ object_name => 'KHAM',
 policy_name => 'BACSI_XEM_KHAM',
 function_schema => 'C##QLBVIEN',
 policy_function => 'KHAM_predicate',
-statement_types => 'SELECT,INSERT',
+statement_types => 'SELECT',
 update_check => TRUE);
 END;
 /
@@ -48,8 +48,6 @@ BEGIN
     RETURN 'SDDV_IDKHAM in ' || check_user;
 END;
 /
-
-
 BEGIN DBMS_RLS.drop_policy (object_schema => 'C##QLBVIEN',
 object_name => 'SU_DUNG_DICH_VU',
 policy_name => 'BACSI_XEM_SDDV'); 
@@ -61,13 +59,13 @@ object_name => 'SU_DUNG_DICH_VU',
 policy_name => 'BACSI_XEM_SDDV',
 function_schema => 'C##QLBVIEN',
 policy_function => 'SDDV_predicate',
-statement_types => 'SELECT,INSERT',
+statement_types => 'SELECT',
 update_check => TRUE);
 END;
 /
 
-GRANT SELECT on C##QLBVIEN.SU_DUNG_DICH_VU to C##BACSI;
-/
+
+
 begin
 execute immediate 'drop PROCEDURE C##QLBVIEN.BS_Xem_DV';
 exception when others then null;

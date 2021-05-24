@@ -20,7 +20,6 @@ C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật d�
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.csprojAssemblyReference.cache
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.BacSi.resources
-C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.BacSi__SuaThongTinDieuTri.resources
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.BacSi_ThemThongTinDieuTri.resources
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.BacSi_XemThongTinDieuTri.resources
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.Form1.resources
@@ -34,4 +33,3 @@ C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật d�
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.NhanVienKeToan.resources
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.NVKT_XemThongTinNhanVien.resources
 C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.NVTN_TrangQuanLy.resources
-C:\Users\MON\OneDrive - VNU-HCMUS\Trang Grade 3\HK2\An toàn và bảo mật dữ liệu trong HTTT\BT - ĐỒ ÁN\ĐỒ ÁN\DBMSSec-18HTTT-07-PH1\Phan he 2\phanhe2\obj\Debug\phanhe2.XemThongBao.resources

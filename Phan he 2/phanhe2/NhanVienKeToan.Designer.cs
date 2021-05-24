@@ -87,7 +87,6 @@ namespace phanhe2
             this.xemtb_nvkt.TabIndex = 14;
             this.xemtb_nvkt.Text = "Xem thong bao";
             this.xemtb_nvkt.UseVisualStyleBackColor = true;
-            this.xemtb_nvkt.Click += new System.EventHandler(this.xemtb_nvkt_Click);
             // 
             // NhanVienKeToan
             // 

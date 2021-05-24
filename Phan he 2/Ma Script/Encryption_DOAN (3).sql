@@ -133,15 +133,26 @@ create or replace FUNCTION c##QLBVIEN.Get_id_kham
     RETURN NUMBER
 IS
     temp number;
+    tmp number;
 BEGIN
-    SELECT MAX(KH_ID) + 1 INTO temp FROM c##QLBVIEN.KHAM;
-    IF temp is null THEN
+    select floor(dbms_random.value(20,999)) into tmp from dual;
+    IF(tmp is NULL) THEN
         RETURN 1;
     ELSE
-        RETURN temp;
+        RETURN tmp;
     END IF;
 END;
 /
+
+DECLARE  
+    tmp NUMBER:= 1;
+BEGIN
+    SELECT c##QLBVIEN.Get_id_kham() into tmp from dual;
+    dbms_output.put_line(TO_CHAR(tmp));
+END;
+/
+
+
 begin
 execute immediate 'drop procedure C##QLBVIEN.BS_Them_KHAM';
 exception when others then null;
@@ -190,13 +201,14 @@ END;
 DECLARE 
     tmp varchar2(4000);
 BEGIN
-    C##QLBVIEN.BS_Them_KHAM('Viem xoang','15-OCT-20','So mui, di ung',NULL,7,'C##NV001',tmp);
+    C##QLBVIEN.BS_Them_KHAM('Dau bung','16-MAY-21','Viem loet da day',NULL,6,'C##NV002',tmp);
     SELECT MAX(KH_ID) + 1 INTO tmp FROM C##QLBVIEN.KHAM;
     --tmp := C##QLBVIEN.Get_id_kham();
     DBMS_OUTPUT.PUT_LINE(tmp);
 END;
 
-DELETE FROM C##QLBVIEN.KHAM WHERE KH_ID = 12;
+DELETE FROM C##QLBVIEN.KHAM WHERE KH_ID = 13;
+SELECT * FROM C##QLBVIEN.KHAM;
 
 -- Grant quyen tao procedure va thuc thi procedure cho cac bac si ==> vi sau khi ap dung VPD ==> can phai dung bac si moi insert KHAM va SDDV
 -- Phai dung tai khoan system/sysdba
@@ -205,4 +217,9 @@ GRANT EXECUTE ON C##QLBVIEN.BS_Them_KHAM TO C##NV001, C##NV002;
 GRANT EXECUTE ON C##QLBVIEN.BS_Xem_KHAM TO C##NV001, C##NV002;
 GRANT EXECUTE ON c##QLBVIEN.Check_exist_id_benhnhan TO C##NV001, C##NV002;
 GRANT EXECUTE ON c##QLBVIEN.Check_exist_id_nv TO C##NV001, C##NV002;
-GRANT EXECUTE ON C##QLBVIEN.Get_id_kham TO C##NV001, C##NV002;
+--GRANT EXECUTE ON C##QLBVIEN.Get_id_kham TO C##NV001, C##NV002;
+
+REVOKE EXECUTE ON C##QLBVIEN.Get_id_kham FROM C##NV001, C##NV002;
+
+GRANT DELETE ON C##QLBVIEN.KHAM TO C##NV001, C##NV002;
+

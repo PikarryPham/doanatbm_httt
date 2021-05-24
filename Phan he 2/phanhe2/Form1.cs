@@ -188,7 +188,7 @@ namespace phanhe2
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Loai nguoi dung khac");
+                                    MessageBox.Show("Vui long chon loai nguoi dung khac.");
                                 }
                             }
                             else

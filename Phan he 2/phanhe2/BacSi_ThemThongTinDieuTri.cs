@@ -35,10 +35,10 @@ namespace phanhe2
             conn.Open();
             try
             {
-                    if(!string.IsNullOrEmpty(trieuchungtxt.Text) || 
+                    if(!string.IsNullOrEmpty(trieuchungtxt.Text) && 
                     !string.IsNullOrEmpty(ngaykham_themkham.Text)
-                 || !string.IsNullOrEmpty(mabn_themkham.Text)
-                 || !string.IsNullOrEmpty(chandoantxt.Text))
+                 && !string.IsNullOrEmpty(mabn_themkham.Text)
+                 && !string.IsNullOrEmpty(chandoantxt.Text))
                 {
 
                     string tenbacsikham = ThongTinNV._username;
@@ -111,9 +111,6 @@ namespace phanhe2
             Console.Read();
         }
 
-        private void timdichvubtn_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

@@ -77,7 +77,6 @@ namespace phanhe2
             this.xemtb.TabIndex = 18;
             this.xemtb.Text = "Xem thong bao";
             this.xemtb.UseVisualStyleBackColor = true;
-            this.xemtb.Click += new System.EventHandler(this.xemtb_Click);
             // 
             // qlthongtinbn
             // 

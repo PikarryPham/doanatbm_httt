@@ -54,12 +54,6 @@
     <Compile Include="BacSi.Designer.cs">
       <DependentUpon>BacSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="BacSi_ SuaThongTinDieuTri.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BacSi_ SuaThongTinDieuTri.Designer.cs">
-      <DependentUpon>BacSi_ SuaThongTinDieuTri.cs</DependentUpon>
-    </Compile>
     <Compile Include="BacSi_ThemThongTinDieuTri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,17 +101,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThongTinNV.cs" />
-    <Compile Include="XemThongBao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="XemThongBao.Designer.cs">
-      <DependentUpon>XemThongBao.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="BacSi.resx">
       <DependentUpon>BacSi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BacSi_ SuaThongTinDieuTri.resx">
-      <DependentUpon>BacSi_ SuaThongTinDieuTri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BacSi_ThemThongTinDieuTri.resx">
       <DependentUpon>BacSi_ThemThongTinDieuTri.cs</DependentUpon>
@@ -149,9 +134,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="XemThongBao.resx">
-      <DependentUpon>XemThongBao.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

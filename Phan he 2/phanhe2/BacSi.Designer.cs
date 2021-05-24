@@ -98,7 +98,6 @@ namespace phanhe2
             this.xemthongbao_bs.TabIndex = 8;
             this.xemthongbao_bs.Text = "Xem thong bao";
             this.xemthongbao_bs.UseVisualStyleBackColor = true;
-            this.xemthongbao_bs.Click += new System.EventHandler(this.xemthongbao_bs_Click);
             // 
             // BacSi
             // 
