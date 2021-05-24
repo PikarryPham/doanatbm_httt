@@ -154,7 +154,6 @@ create or replace PROCEDURE  C##QLBVIEN.BS_Them_KHAM
     T_KH_CHANDOAN VARCHAR2, 
     T_KH_TAIKHAM DATE,
     T_KH_IDBN NUMBER,
-    T_KH_TONGTIEN NUMBER,
     T_KH_BSKHAM VARCHAR2,
     P_ERROR OUT VARCHAR2
 )
@@ -174,11 +173,11 @@ BEGIN
         Raise ex2;
     END IF;
     temp2 := '''';
+    P_ERROR := 'Them thong tin kham thanh cong';
     temp3 := C##QLBVIEN.Get_id_kham();
-    DBMS_OUTPUT.PUT_LINE('Hello');
     execute immediate 'INSERT INTO C##QLBVIEN.KHAM (KH_ID, KH_TRIEUCHUNG, KH_THOIGIAN, KH_CHANDOAN, KH_TAIKHAM,KH_IDBN,KH_TONGTIEN,KH_BSKHAM)
         VALUES (' || to_char(temp3) || ',' || temp2 || C##QLBVIEN.EnCryp(T_KH_TRIEUCHUNG) || temp2 || ',' || temp2 || T_KH_THOIGIAN || temp2 || ',' || temp2 || C##QLBVIEN.EnCryp(T_KH_CHANDOAN) || temp2 || ',' || temp2 || T_KH_TAIKHAM || temp2 ||
-        ',' || temp2 || T_KH_IDBN || temp2 || ',' || temp2 || T_KH_TONGTIEN|| temp2 || ',' || temp2 || T_KH_BSKHAM || temp2 || ')';
+        ',' || temp2 || T_KH_IDBN || temp2 || ',' || temp2 || to_char(0) || temp2 || ',' || temp2 || T_KH_BSKHAM || temp2 || ')';
     EXCEPTION 
         WHEN ex THEN
             P_ERROR := 'id benh nhan khong ton tai';
@@ -191,12 +190,13 @@ END;
 DECLARE 
     tmp varchar2(4000);
 BEGIN
-    C##QLBVIEN.BS_Them_KHAM('Viem xoang','15-OCT-20','So mui, di ung',NULL,7,1200000,'C##NV001',tmp);
+    C##QLBVIEN.BS_Them_KHAM('Viem xoang','15-OCT-20','So mui, di ung',NULL,7,'C##NV001',tmp);
     SELECT MAX(KH_ID) + 1 INTO tmp FROM C##QLBVIEN.KHAM;
     --tmp := C##QLBVIEN.Get_id_kham();
     DBMS_OUTPUT.PUT_LINE(tmp);
 END;
 
+DELETE FROM C##QLBVIEN.KHAM WHERE KH_ID = 12;
 
 -- Grant quyen tao procedure va thuc thi procedure cho cac bac si ==> vi sau khi ap dung VPD ==> can phai dung bac si moi insert KHAM va SDDV
 -- Phai dung tai khoan system/sysdba

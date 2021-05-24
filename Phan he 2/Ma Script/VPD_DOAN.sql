@@ -182,7 +182,6 @@ BEGIN
     temp2 := '''';
     execute immediate 'INSERT INTO C##QLBVIEN.SU_DUNG_DICH_VU (SSDV_IDDV,SDDV_IDKHAM,SDDV_NGTHUCHIEN,SDDV_THOIGIAN,SDDV_CHECK)
         VALUES (' || T_SSDV_IDDV || temp2 || ',' || temp2 || T_SDDV_IDKHAM || temp2 || ',' || temp2 || T_SDDV_NGTHUCHIEN || temp2 || ',' || temp2 || T_SDDV_THOIGIAN || temp2 || ',' || temp2 || T_SDDV_CHECK || temp2 || ')';
-    DBMS_OUTPUT.PUT_LINE('Thanh cong');
     EXCEPTION
         WHEN ex THEN
             P_ERROR := 'id kham khong ton tai';
@@ -202,7 +201,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(tmp);
 END;
 
-SELECT * FROM C##QLBVIEN.KHAM;
+SELECT * FROM C##QLBVIEN.SU_DUNG_DICH_VU;
 -- Grant quyen tao procedure va thuc thi procedure cho cac bac si ==> vi sau khi ap dung VPD ==> can phai dung bac si moi insert KHAM va SDDV
 GRANT CREATE PROCEDURE TO C##NV001, C##NV002;
 GRANT EXECUTE ON C##QLBVIEN.NV_Them_SDDV TO C##NV001, C##NV002;
