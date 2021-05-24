@@ -33,25 +33,20 @@ namespace phanhe2
             this.username = new System.Windows.Forms.Label();
             this.xemthongtindieutribenh = new System.Windows.Forms.TabControl();
             this.xemthongtinkhamcuabenhnhan = new System.Windows.Forms.TabPage();
-            this.mabn_xemkham = new System.Windows.Forms.NumericUpDown();
-            this.makhambenh_xemkham = new System.Windows.Forms.NumericUpDown();
             this.dsthongtinkham = new System.Windows.Forms.DataGridView();
             this.btn_xemthongtinkhamcuabn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.xemthongtinsddvcuabn = new System.Windows.Forms.TabPage();
-            this.mabenhnhan_xemsddv = new System.Windows.Forms.NumericUpDown();
             this.dssudungdichvu = new System.Windows.Forms.DataGridView();
             this.xemthongtinsddv_btn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.quayvebtn = new System.Windows.Forms.Button();
+            this.mabn_xemkham = new System.Windows.Forms.TextBox();
+            this.mabenhnhan_sddv = new System.Windows.Forms.TextBox();
             this.xemthongtindieutribenh.SuspendLayout();
             this.xemthongtinkhamcuabenhnhan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mabn_xemkham)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.makhambenh_xemkham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsthongtinkham)).BeginInit();
             this.xemthongtinsddvcuabn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mabenhnhan_xemsddv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dssudungdichvu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,66 +84,30 @@ namespace phanhe2
             // xemthongtinkhamcuabenhnhan
             // 
             this.xemthongtinkhamcuabenhnhan.Controls.Add(this.mabn_xemkham);
-            this.xemthongtinkhamcuabenhnhan.Controls.Add(this.makhambenh_xemkham);
             this.xemthongtinkhamcuabenhnhan.Controls.Add(this.dsthongtinkham);
             this.xemthongtinkhamcuabenhnhan.Controls.Add(this.btn_xemthongtinkhamcuabn);
             this.xemthongtinkhamcuabenhnhan.Controls.Add(this.label3);
-            this.xemthongtinkhamcuabenhnhan.Controls.Add(this.label2);
             this.xemthongtinkhamcuabenhnhan.Location = new System.Drawing.Point(4, 25);
             this.xemthongtinkhamcuabenhnhan.Name = "xemthongtinkhamcuabenhnhan";
             this.xemthongtinkhamcuabenhnhan.Padding = new System.Windows.Forms.Padding(3);
-            this.xemthongtinkhamcuabenhnhan.Size = new System.Drawing.Size(768, 433);
+            this.xemthongtinkhamcuabenhnhan.Size = new System.Drawing.Size(768, 499);
             this.xemthongtinkhamcuabenhnhan.TabIndex = 0;
             this.xemthongtinkhamcuabenhnhan.Text = "Xem thong tin kham cua benh nhan";
             this.xemthongtinkhamcuabenhnhan.UseVisualStyleBackColor = true;
             // 
-            // mabn_xemkham
-            // 
-            this.mabn_xemkham.Location = new System.Drawing.Point(150, 85);
-            this.mabn_xemkham.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.mabn_xemkham.Name = "mabn_xemkham";
-            this.mabn_xemkham.Size = new System.Drawing.Size(568, 22);
-            this.mabn_xemkham.TabIndex = 65;
-            this.mabn_xemkham.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // makhambenh_xemkham
-            // 
-            this.makhambenh_xemkham.Location = new System.Drawing.Point(150, 31);
-            this.makhambenh_xemkham.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.makhambenh_xemkham.Name = "makhambenh_xemkham";
-            this.makhambenh_xemkham.Size = new System.Drawing.Size(568, 22);
-            this.makhambenh_xemkham.TabIndex = 64;
-            this.makhambenh_xemkham.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // dsthongtinkham
             // 
             this.dsthongtinkham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsthongtinkham.Location = new System.Drawing.Point(32, 169);
+            this.dsthongtinkham.Location = new System.Drawing.Point(32, 154);
             this.dsthongtinkham.Name = "dsthongtinkham";
             this.dsthongtinkham.RowHeadersWidth = 51;
             this.dsthongtinkham.RowTemplate.Height = 24;
-            this.dsthongtinkham.Size = new System.Drawing.Size(686, 257);
+            this.dsthongtinkham.Size = new System.Drawing.Size(686, 324);
             this.dsthongtinkham.TabIndex = 35;
             // 
             // btn_xemthongtinkhamcuabn
             // 
-            this.btn_xemthongtinkhamcuabn.Location = new System.Drawing.Point(300, 113);
+            this.btn_xemthongtinkhamcuabn.Location = new System.Drawing.Point(301, 84);
             this.btn_xemthongtinkhamcuabn.Name = "btn_xemthongtinkhamcuabn";
             this.btn_xemthongtinkhamcuabn.Size = new System.Drawing.Size(167, 50);
             this.btn_xemthongtinkhamcuabn.TabIndex = 34;
@@ -159,24 +118,15 @@ namespace phanhe2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 85);
+            this.label3.Location = new System.Drawing.Point(29, 35);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Ma benh nhan";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Ma kham benh";
-            // 
             // xemthongtinsddvcuabn
             // 
-            this.xemthongtinsddvcuabn.Controls.Add(this.mabenhnhan_xemsddv);
+            this.xemthongtinsddvcuabn.Controls.Add(this.mabenhnhan_sddv);
             this.xemthongtinsddvcuabn.Controls.Add(this.dssudungdichvu);
             this.xemthongtinsddvcuabn.Controls.Add(this.xemthongtinsddv_btn);
             this.xemthongtinsddvcuabn.Controls.Add(this.label5);
@@ -187,23 +137,6 @@ namespace phanhe2
             this.xemthongtinsddvcuabn.TabIndex = 1;
             this.xemthongtinsddvcuabn.Text = "Xem thong tin su dung dich vu cua benh nhan";
             this.xemthongtinsddvcuabn.UseVisualStyleBackColor = true;
-            // 
-            // mabenhnhan_xemsddv
-            // 
-            this.mabenhnhan_xemsddv.Location = new System.Drawing.Point(229, 30);
-            this.mabenhnhan_xemsddv.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.mabenhnhan_xemsddv.Name = "mabenhnhan_xemsddv";
-            this.mabenhnhan_xemsddv.Size = new System.Drawing.Size(491, 22);
-            this.mabenhnhan_xemsddv.TabIndex = 67;
-            this.mabenhnhan_xemsddv.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // dssudungdichvu
             // 
@@ -223,6 +156,7 @@ namespace phanhe2
             this.xemthongtinsddv_btn.TabIndex = 35;
             this.xemthongtinsddv_btn.Text = "Xem thong tin su dung dich vu";
             this.xemthongtinsddv_btn.UseVisualStyleBackColor = true;
+            this.xemthongtinsddv_btn.Click += new System.EventHandler(this.xemthongtinsddv_btn_Click);
             // 
             // label5
             // 
@@ -245,6 +179,20 @@ namespace phanhe2
             this.quayvebtn.UseVisualStyleBackColor = false;
             this.quayvebtn.Click += new System.EventHandler(this.quayvebtn_Click);
             // 
+            // mabn_xemkham
+            // 
+            this.mabn_xemkham.Location = new System.Drawing.Point(150, 35);
+            this.mabn_xemkham.Name = "mabn_xemkham";
+            this.mabn_xemkham.Size = new System.Drawing.Size(568, 22);
+            this.mabn_xemkham.TabIndex = 66;
+            // 
+            // mabenhnhan_sddv
+            // 
+            this.mabenhnhan_sddv.Location = new System.Drawing.Point(152, 27);
+            this.mabenhnhan_sddv.Name = "mabenhnhan_sddv";
+            this.mabenhnhan_sddv.Size = new System.Drawing.Size(568, 22);
+            this.mabenhnhan_sddv.TabIndex = 67;
+            // 
             // BacSi_XemThongTinDieuTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -260,12 +208,9 @@ namespace phanhe2
             this.xemthongtindieutribenh.ResumeLayout(false);
             this.xemthongtinkhamcuabenhnhan.ResumeLayout(false);
             this.xemthongtinkhamcuabenhnhan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mabn_xemkham)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.makhambenh_xemkham)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsthongtinkham)).EndInit();
             this.xemthongtinsddvcuabn.ResumeLayout(false);
             this.xemthongtinsddvcuabn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mabenhnhan_xemsddv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dssudungdichvu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -280,15 +225,13 @@ namespace phanhe2
         private System.Windows.Forms.TabPage xemthongtinkhamcuabenhnhan;
         private System.Windows.Forms.TabPage xemthongtinsddvcuabn;
         private System.Windows.Forms.Button quayvebtn;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_xemthongtinkhamcuabn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button xemthongtinsddv_btn;
         private System.Windows.Forms.DataGridView dsthongtinkham;
         private System.Windows.Forms.DataGridView dssudungdichvu;
-        private System.Windows.Forms.NumericUpDown mabn_xemkham;
-        private System.Windows.Forms.NumericUpDown makhambenh_xemkham;
-        private System.Windows.Forms.NumericUpDown mabenhnhan_xemsddv;
+        private System.Windows.Forms.TextBox mabn_xemkham;
+        private System.Windows.Forms.TextBox mabenhnhan_sddv;
     }
 }

@@ -28,18 +28,18 @@ namespace phanhe2
             this.Close();
         }
         OracleConnection conn = DBUtils.GetDBConnection();
-        DataSet ds = new DataSet();
-
+        
         private void btnxemdsnhanvien_Click(object sender, EventArgs e)
         {
             conn.Open();
             try
             {
                 DataTable dt = new DataTable();
-                String search = manhanvien_xemnv.Text;
+                String search = manhanvien_xemnv.Text.ToUpper();
                 OracleCommand objCmd = new OracleCommand("C##QLBVIEN.NVKT_Xem_NV", conn);
                 objCmd.CommandType = CommandType.StoredProcedure;
                 objCmd.Parameters.Add("T_NV_ID", OracleDbType.Varchar2).Value = search;
+                //MessageBox.Show(search);
                 objCmd.Parameters.Add("KQ", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
 
                 objCmd.Parameters.Add(new OracleParameter("@P_ERROR", OracleDbType.Varchar2, 32767));
@@ -51,8 +51,10 @@ namespace phanhe2
                 OracleDataAdapter da = new OracleDataAdapter(objCmd);
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
-                MessageBox.Show(Perror);
-
+                if(manhanvien_xemnv.Text.Length >= 1)
+                {
+                    MessageBox.Show(Perror);
+                }
             }
             catch (Exception err)
             {
@@ -66,5 +68,6 @@ namespace phanhe2
             }
             Console.Read();
         }
+
     }
 }

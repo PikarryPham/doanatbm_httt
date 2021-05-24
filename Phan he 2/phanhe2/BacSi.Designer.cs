@@ -104,6 +104,7 @@ namespace phanhe2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(821, 432);
             this.Controls.Add(this.xemthongbao_bs);
             this.Controls.Add(this.dangxuatbtn);

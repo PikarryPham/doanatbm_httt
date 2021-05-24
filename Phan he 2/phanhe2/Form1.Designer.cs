@@ -93,13 +93,13 @@ namespace phanhe2
             this.comboBox_login.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox_login.FormattingEnabled = true;
             this.comboBox_login.Items.AddRange(new object[] {
-            "Bac si",
-            "Bo phan tiep tan va dieu phoi benh",
-            "Nhan vien ban thuoc",
-            "Nhan vien ke toan",
-            "Quan ly chuyen mon",
-            "Quan ly tai nguyen nhan su",
-            "Quan ly tai vu"});
+            "bac si",
+            "ban thuoc",
+            "ke toan",
+            "nhan vien bo phan tiep tan",
+            "quan ly chuyen mon",
+            "quan ly tai nguyen nhan su",
+            "quan ly tai vu"});
             this.comboBox_login.Location = new System.Drawing.Point(230, 315);
             this.comboBox_login.Name = "comboBox_login";
             this.comboBox_login.Size = new System.Drawing.Size(568, 24);
