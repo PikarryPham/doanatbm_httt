@@ -35,7 +35,6 @@ namespace atbm
             objCmd.Parameters.Add("adUsername", username);
             objCmd.Parameters.Add("adPassword", password);
             objCmd.Parameters.Add("tmp", OracleDbType.Int32).Direction = ParameterDirection.Output;
-
             
             if (username == "c##administrator" && password == "addm")
             {
