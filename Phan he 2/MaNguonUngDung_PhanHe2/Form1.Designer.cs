@@ -95,8 +95,8 @@ namespace phanhe2
             this.comboBox_login.Items.AddRange(new object[] {
             "bac si",
             "ban thuoc",
+            "bo phan tiep tan",
             "ke toan",
-            "nhan vien bo phan tiep tan",
             "quan ly chuyen mon",
             "quan ly tai nguyen nhan su",
             "quan ly tai vu"});

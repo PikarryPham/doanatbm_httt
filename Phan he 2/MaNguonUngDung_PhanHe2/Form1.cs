@@ -20,7 +20,6 @@ namespace phanhe2
             InitializeComponent();
         }
 
-       
 
         public string returnUsername()
         {
@@ -78,6 +77,7 @@ namespace phanhe2
                             String username = usernametxt_login.Text.ToUpper();
                             String psw = pswtxt_login.Text.ToUpper();
                             String loainv = comboBox_login.SelectedItem.ToString().ToLower();
+                            
                             //MessageBox.Show(loainv);
 
                             // Convert no ve chuoi thuong neu lo co ghi hoa thi van dang nhap duoc
@@ -86,10 +86,18 @@ namespace phanhe2
                             objCmd.Parameters.Add("adUsername", username);
                             objCmd.Parameters.Add("adPassword", psw);
                             objCmd.Parameters.Add("loainv", loainv);
+                            //objCmd.Parameters.Add("@tmp", OracleDbType.Int32);
+                            //objCmd.Parameters["@tmp"].Direction = ParameterDirection.ReturnValue;
 
-                            OracleParameter kq;
-                            kq = objCmd.Parameters.Add("tmp", OracleDbType.Int32);
-                            kq.Direction = ParameterDirection.Output;
+
+                            OracleParameter resultParam = new OracleParameter("@tmp", OracleDbType.Int32);
+                            resultParam.Direction = ParameterDirection.ReturnValue;
+                            objCmd.Parameters.Add(resultParam);
+                            
+
+                            Int32 kiekis = Convert.ToInt32(resultParam.Value);
+                            objCmd.ExecuteScalar();
+                            //MessageBox.Show("Ket qua la" + kiekis.ToString());
 
                             Int32 result = 1;
                             //result = Convert.ToInt32(kq.Value);
@@ -136,11 +144,11 @@ namespace phanhe2
                                         MessageBox.Show("Co loi xay ra/Nhan vien nay khong phai la bac si.");
                                     }
                                 }
-                                else if (option.ToLower() == "nhan vien bo phan tiep tan")
+                                else if (option.ToLower() == "bo phan tiep tan")
                                 {
                                     if(ThongTinNV._username == "C##NV008" && ThongTinNV._psw == "C##NV008")
                                     {
-                                        ThongTinNV._loainv = "nhan vien bo phan tiep tan";
+                                        ThongTinNV._loainv = "bo phan tiep tan";
                                         Form form = new NVTN_TrangQuanLy();
                                         form.StartPosition = FormStartPosition.CenterScreen;
                                         form.Show();
@@ -150,7 +158,7 @@ namespace phanhe2
                                     {
                                         ThongTinNV._username = usernametxt_login.Text.ToLower();
                                         ThongTinNV._psw = pswtxt_login.Text.ToLower();
-                                        ThongTinNV._loainv = "nhan vien bo phan tiep tan";
+                                        ThongTinNV._loainv = "bo phan tiep tan";
                                         Form form = new NVTN_TrangQuanLy();
                                         form.StartPosition = FormStartPosition.CenterScreen;
                                         form.Show();

@@ -10,18 +10,24 @@ CREATE OR REPLACE FUNCTION c##administrator.SYS_KTraTaiKhoan(adUsername IN varch
 RETURN NUMBER
 IS
     tmp number;
+    str varchar2(4000);
 BEGIN
-    SELECT COUNT(*) INTO tmp FROM c##QLBVIEN.NHAN_VIEN WHERE NV_ID = adUsername AND NV_PSW = adPassword AND NV_LOAI = loainv;
+    str:= C##QLBVIEN.hash_sha256(adPassword);
+    dbms_output.put_line(str);
+    SELECT COUNT(*) INTO tmp FROM c##QLBVIEN.NHAN_VIEN WHERE NV_ID = adUsername AND NV_PSW = str AND NV_LOAI = loainv;
     IF(tmp != 0)
     THEN
-        RETURN 1;
+        tmp := 1;
+        RETURN tmp;
     ELSE
-        RETURN 0;
+        tmp := 0;
+        RETURN tmp;
     END IF;
 EXCEPTION
     WHEN OTHERS THEN
-        dbms_output.put_line('Something wrong');
-        RETURN 0;
+        dbms_output.put_line('Something wrong' || SQLERRM);
+        tmp := -1;
+        RETURN tmp;
 END;
 /
 

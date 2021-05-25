@@ -24,9 +24,9 @@ namespace phanhe2
             //string user = "c##administrator";
             //string password = "addm";
             string user = ThongTinNV._username;
-            MessageBox.Show("Ten user" + user);
+            //MessageBox.Show("Ten user" + user);
             string password = ThongTinNV._psw;
-            MessageBox.Show("Password" + password);
+            //MessageBox.Show("Password" + password);
 
 
             return DBOracleUtils.GetDBConnection(host, port, sid, user, password);

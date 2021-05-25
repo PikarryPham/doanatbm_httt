@@ -46,9 +46,9 @@ VALUES ('C##NV005','C##NV005','Nguyen Duc','17-NOV-96',C##QLBVIEN.EnCryp('223 Ng
 INSERT INTO c##QLBVIEN.NHAN_VIEN
 VALUES ('C##NV006','C##NV006','Tran Binh','17-NOV-96',C##QLBVIEN.EnCryp('12 Ho Thi Ky'),C##QLBVIEN.EnCryp('1123456794'),C##QLBVIEN.EnCryp('12000000'),C##QLBVIEN.EnCryp('11000000'),'quan ly tai vu',25,C##QLBVIEN.EnCryp('1000000'),'1',7);
 INSERT INTO c##QLBVIEN.NHAN_VIEN
-VALUES ('C##NV007','C##NV007','Le Thi Luu','17-NOV-96',C##QLBVIEN.EnCryp('100 Nguyen Xi'),C##QLBVIEN.EnCryp('1123456795'),C##QLBVIEN.EnCryp('7000000'),C##QLBVIEN.EnCryp('6000000'),'nhan vien bo phan tai vu',30,C##QLBVIEN.EnCryp('1000000'),'1',6);
+VALUES ('C##NV007','C##NV007','Le Thi Luu','17-NOV-96',C##QLBVIEN.EnCryp('100 Nguyen Xi'),C##QLBVIEN.EnCryp('1123456795'),C##QLBVIEN.EnCryp('7000000'),C##QLBVIEN.EnCryp('6000000'),'bo phan tai vu',30,C##QLBVIEN.EnCryp('1000000'),'1',6);
 INSERT INTO c##QLBVIEN.NHAN_VIEN
-VALUES ('C##NV008','C##NV008','Nguyen Thi Anh','17-NOV-96',C##QLBVIEN.EnCryp('68 Tran Binh Trong'),C##QLBVIEN.EnCryp('1123456796'),C##QLBVIEN.EnCryp('8000000'),C##QLBVIEN.EnCryp('7500000'),'nhan vien bo phan tiep tan',30,C##QLBVIEN.EnCryp('500000'),'1',8);
+VALUES ('C##NV008','C##NV008','Nguyen Thi Anh','17-NOV-96',C##QLBVIEN.EnCryp('68 Tran Binh Trong'),C##QLBVIEN.EnCryp('1123456796'),C##QLBVIEN.EnCryp('8000000'),C##QLBVIEN.EnCryp('7500000'),'bo phan tiep tan',30,C##QLBVIEN.EnCryp('500000'),'1',8);
 
 /*nhap lieu benh nhan*/
 --SELECT * FROM c##QLBVIEN.BENH_NHAN;
